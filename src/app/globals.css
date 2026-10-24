@@ -1,0 +1,613 @@
+@import "tailwindcss";
+
+/* Wiki reading system: a paper-like archive inside the wider THEYSIX field. */
+.wiki-shell { max-width: 1180px; margin: 0 auto; padding: 6rem 1.25rem 9rem; }
+.wiki-hero { max-width: 760px; padding: 3rem 0 5rem; }
+.wiki-hero h1, .wiki-list-page h1, .wiki-article-header h1 { margin: .6rem 0 1rem; color: var(--color-ink-bright); font-size: clamp(2.8rem, 7vw, 6rem); line-height: .94; font-weight: 900; letter-spacing: -.04em; }
+.wiki-hero > p:not(.t6-meta), .wiki-list-page > p:not(.t6-meta), .wiki-article-header > p { max-width: 45rem; color: var(--color-ink-muted); font-size: 1.08rem; line-height: 1.75; }
+.wiki-search { display: flex; gap: .6rem; margin-top: 2rem; }
+.wiki-search label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+.wiki-search input { min-height: 3rem; flex: 1; border: 1px solid var(--color-edge); border-radius: 4px; background: var(--color-panel); color: var(--color-ink); padding: 0 .9rem; }
+.wiki-search button { min-height: 3rem; border: 0; border-radius: 4px; background: var(--color-action); color: var(--color-on-action); padding: 0 1.2rem; font-weight: 800; }
+.wiki-hero small, .wiki-meta { display: block; margin-top: .75rem; color: var(--color-ink-muted); font-size: .78rem; }
+.wiki-section { margin-top: 3rem; }
+.wiki-section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--color-rule); padding-bottom: .8rem; }
+.wiki-section-heading span { color: var(--color-portal); font-size: .68rem; font-weight: 800; letter-spacing: .18em; }
+.wiki-section-heading h2 { margin: 0; color: var(--color-ink); font-size: 1.35rem; }
+.wiki-edition { margin-top: 2.4rem; }
+.wiki-edition h3 { margin-bottom: .6rem; color: var(--color-ink); font-size: 1.1rem; }
+.wiki-index { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--color-rule); }
+.wiki-index li { border-bottom: 1px solid var(--color-rule); }
+.wiki-index a { display: grid; gap: .22rem; padding: 1rem .8rem; color: inherit; text-decoration: none; transition: background 150ms ease, padding 150ms ease; }
+.wiki-index a:hover { background: color-mix(in srgb, var(--color-portal) 7%, transparent); padding-left: 1.1rem; }
+.wiki-index strong { color: var(--color-portal); font-size: 1rem; }
+.wiki-index span { color: var(--color-ink-muted); line-height: 1.55; }
+.wiki-index em { color: var(--color-edge); font-size: .7rem; font-style: normal; letter-spacing: .06em; }
+.wiki-back { display: inline-block; margin-bottom: 2rem; color: var(--color-ink-muted); text-decoration: none; }
+.wiki-back:hover, .wiki-link, .wiki-prose a { color: var(--color-portal); }
+.wiki-article-grid { display: grid; grid-template-columns: 210px minmax(0, 720px); gap: clamp(2rem, 6vw, 6rem); justify-content: center; }
+.wiki-rail { position: sticky; top: 2rem; align-self: start; }
+.wiki-rail ul { margin: 1rem 0 0; padding: 0; list-style: none; border-left: 1px solid var(--color-rule); }
+.wiki-rail a { display: block; padding: .45rem .7rem; color: var(--color-ink-muted); font-size: .82rem; line-height: 1.35; text-decoration: none; }
+.wiki-rail a:hover, .wiki-rail a.active { border-left: 2px solid var(--color-portal); margin-left: -1px; color: var(--color-ink); }
+.wiki-article-header { border-bottom: 1px solid var(--color-rule); margin-bottom: 2.5rem; padding-bottom: 1.8rem; }
+.wiki-prose { color: var(--color-ink); font-size: 1.02rem; line-height: 1.82; }
+.wiki-prose h2 { margin: 3rem 0 1rem; color: var(--color-ink-bright); font-size: 1.7rem; line-height: 1.15; }
+.wiki-prose h3 { margin: 2rem 0 .7rem; color: var(--color-ink-bright); font-size: 1.25rem; }
+.wiki-prose p { margin: 0 0 1.25rem; }
+.wiki-prose ul, .wiki-prose ol { margin: 1rem 0 1.5rem; padding-left: 1.4rem; }
+.wiki-prose li { margin: .5rem 0; }
+.wiki-prose pre { overflow-x: auto; margin: 1.5rem 0; padding: 1rem; border: 1px solid var(--color-rule); background: var(--color-panel); color: var(--color-portal); }
+.wiki-prose figure { margin: 2rem 0; }
+.wiki-prose figure img { width: 100%; height: auto; border: 1px solid var(--color-rule); }
+.wiki-prose iframe { display: block; width: 100%; min-height: 360px; border: 1px solid var(--color-rule); }
+.wiki-prose figcaption { margin-top: .5rem; color: var(--color-ink-muted); font-size: .82rem; text-align: center; }
+.wiki-rules > div { border-top: 1px solid var(--color-rule); padding: 1rem 0; }
+.wiki-rules dt { color: var(--color-portal); font-weight: 800; }
+.wiki-rules dd { margin: .35rem 0 0; }
+.wiki-resource span { display: block; color: var(--color-ink-muted); font-size: .9rem; }
+.wiki-callout, .wiki-tool-placeholder { margin: 1.5rem 0; border-left: 3px solid var(--color-portal); background: var(--color-panel); padding: 1rem 1.2rem; }
+.wiki-callout-warning { border-color: #e3b341; }.wiki-callout-danger { border-color: var(--color-danger); }
+.wiki-table-wrap { overflow-x: auto; margin: 1.5rem 0; }.wiki-prose table { width: 100%; border-collapse: collapse; }.wiki-prose th, .wiki-prose td { border: 1px solid var(--color-rule); padding: .65rem; text-align: left; }.wiki-prose th { color: var(--color-portal); }
+.wiki-prev-next { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-top: 4rem; border-top: 1px solid var(--color-rule); padding-top: 1rem; }.wiki-prev-next a:last-child { text-align: right; }
+.wiki-search-status, .wiki-empty { margin-top: .7rem; color: var(--color-ink-muted); font-size: .8rem; }
+.wiki-tool-page { padding-top: 4rem; }
+.wiki-tool-page input, .wiki-tool-page textarea, .wiki-tool-page select { min-height: 2.75rem; border: 1px solid var(--color-edge); border-radius: 4px; background: var(--color-panel); color: var(--color-ink); padding: .65rem .8rem; }
+.wiki-tool-page textarea { min-height: 7rem; width: 100%; }
+.wiki-tool-page button { border: 1px solid var(--color-edge); border-radius: 4px; background: var(--color-panel); color: var(--color-ink); padding: .6rem .8rem; }
+.wiki-tool-page button:hover { border-color: var(--color-portal); color: var(--color-portal); }
+.wiki-tool-page table { width: 100%; border-collapse: collapse; }
+.wiki-tool-page th, .wiki-tool-page td { border-bottom: 1px solid var(--color-rule); padding: .7rem; text-align: left; }
+.wiki-tool-page th { color: var(--color-portal); }
+.wiki-tool-page pre, .wiki-tool-page code { overflow-x: auto; border: 1px solid var(--color-rule); background: var(--color-panel); color: var(--color-portal); padding: .8rem; }
+.wiki-tool-page .label-mono { color: var(--color-ink-muted); font-size: .7rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.wiki-legal-header { max-width: 760px; border-bottom: 1px solid var(--color-rule); padding: 3rem 0 2rem; }
+.wiki-legal-header h1 { margin: .6rem 0 1rem; color: var(--color-ink-bright); font-size: clamp(2.8rem, 7vw, 5.6rem); line-height: .94; font-weight: 900; letter-spacing: -.04em; }
+.wiki-legal-header > p:not(.t6-meta):not(.wiki-meta) { color: var(--color-ink-muted); font-size: 1.08rem; line-height: 1.75; }
+.wiki-legal-layout { display: grid; grid-template-columns: 190px minmax(0, 720px); gap: clamp(2rem, 6vw, 6rem); justify-content: center; padding-top: 3rem; }
+.wiki-legal-nav { align-self: start; position: sticky; top: 2rem; }
+.wiki-legal-nav ul { margin: .8rem 0 0; padding: 0; list-style: none; border-left: 1px solid var(--color-rule); }
+.wiki-legal-nav a { display: block; padding: .5rem .7rem; color: var(--color-ink-muted); font-size: .82rem; text-decoration: none; }
+.wiki-legal-nav a:hover { border-left: 2px solid var(--color-portal); margin-left: -1px; color: var(--color-ink); }
+.wiki-legal-copy section { border-top: 1px solid var(--color-rule); padding-top: 1rem; }
+.wiki-legal-copy section:first-child { border-top: 0; padding-top: 0; }
+@media (max-width: 800px) { .wiki-legal-layout { display: block; padding-top: 2rem; }.wiki-legal-nav { position: static; margin-bottom: 2.5rem; }.wiki-legal-nav ul { display: flex; overflow-x: auto; gap: .2rem; border-left: 0; border-bottom: 1px solid var(--color-rule); }.wiki-legal-nav li { min-width: max-content; }.wiki-legal-nav a { padding: .7rem .5rem; } }
+@media (max-width: 800px) { .wiki-shell { padding-top: 4rem; }.wiki-article-grid { display: block; }.wiki-rail { position: static; margin-bottom: 3rem; }.wiki-rail ul { display: flex; overflow-x: auto; gap: .2rem; border-left: 0; border-bottom: 1px solid var(--color-rule); }.wiki-rail li { min-width: max-content; }.wiki-rail a { padding: .7rem .5rem; }.wiki-rail a:hover, .wiki-rail a.active { border-left: 0; border-bottom: 2px solid var(--color-portal); margin-left: 0; }.wiki-prose iframe { min-height: 240px; } }
+
+/* ============================================================================
+   theysix design tokens - Signal Field direction
+
+   Layer 1: primitives  - the 12 exact brand colours from H:\Website\Colors
+   Layer 2: semantics   - role-based aliases; components only use these
+   Layer 3: primitives of the cinematic system - chapters, glass, signal edges
+
+   Every text/surface pair below was measured with the WCAG 2.1 contrast
+   formula. Ratios are recorded so future edits cannot silently break them.
+   ========================================================================= */
+
+@theme {
+  /* -- Layer 1: primitives ------------------------------------------------ */
+  --color-onyx: #020202;        /* deepest page background      */
+  --color-carbon: #171717;      /* raised dark surface          */
+  --color-jet: #1d1d1d;         /* panel surface                */
+  --color-cosmic: #23212c;      /* the field sky, elevated surface */
+  --color-vanilla: #f1fec8;     /* primary warm text            */
+  --color-orchid: #e5bddf;      /* held in reserve; not a visible role */
+  --color-turquoise: #99e1d9;   /* the accent: focus, action, TS glow */
+  --color-signal: #ff0b55;      /* semantic danger only         */
+  --color-signal-deep: #cf0f47; /* semantic danger, depth       */
+  --color-wine-ash: #32292f;    /* held in reserve              */
+  --color-navy: #062045;        /* held in reserve              */
+  --color-teal: #022e21;        /* the field's natural depth tone */
+
+  /* Derived neutrals. Mixed from Vanilla over Onyx, then measured. */
+  --color-muted: #969e7d;       /* AA everywhere: 7.39 Onyx / 6.01 Jet / 5.65 Cosmic */
+  --color-rule: #23251e;        /* decorative hairline, non-interactive */
+  --color-edge: #6e735b;        /* interactive boundary: 4.22 / 3.42 / 3.22 (>=3:1) */
+
+  /* -- Layer 2: semantic roles -------------------------------------------- */
+  /* Named so Tailwind emits readable utilities: bg-void, text-ink, border-edge. */
+  --color-void: var(--color-onyx);          /* page ground              */
+  --color-sky: var(--color-cosmic);         /* the field sky            */
+  --color-raised: var(--color-carbon);      /* raised surface           */
+  --color-panel: var(--color-jet);          /* card / panel             */
+  --color-elevated: var(--color-cosmic);    /* elevated surface         */
+
+  --color-ink: var(--color-vanilla);        /* 19.51 Onyx / 14.90 Cosmic - AAA */
+  /* The hero wordmark needs warm white, not pale lime: Vanilla read as lime at
+     display size. This is Vanilla mixed 70% toward white - a measured value,
+     not a new arbitrary hex - keeping a trace of the brand's warmth.
+     20.39 on Onyx, 15.57 on Cosmic. AAA. */
+  --color-ink-bright: #fbffee;
+  --color-ink-muted: var(--color-muted);    /* >=5.65 everywhere - AA   */
+
+  --color-focus: var(--color-turquoise);    /* >=10.66 on every surface */
+  --color-portal: var(--color-turquoise);
+
+  /* The accent carries the primary action. Onyx on Turquoise measures 13.96
+     (AAA), and - unlike the retired Signal Pink CTA - the fill can safely
+     darken on hover: Onyx on #7fd3c9 is still 11.92. Note that a Vanilla focus
+     ring on a Turquoise fill measures 1.40 and must never be used; the ring is
+     separated from the fill by an Onyx gap instead. */
+  --color-action: var(--color-turquoise);
+  --color-action-hover: #7fd3c9;
+  --color-on-action: var(--color-onyx);
+
+  /* Signal Pink is demoted to a semantic role. It is absent from the opening
+     and from primary navigation, cards, and buttons. */
+  --color-danger: var(--color-signal);
+  --color-danger-depth: var(--color-signal-deep);
+
+  --font-sans: "Trebuchet MS", "Lucida Sans Unicode", sans-serif;
+
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 6px;
+  --radius-pill: 999px;
+
+  --ease-signal: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* -- Base ------------------------------------------------------------------ */
+
+:root {
+  color-scheme: dark;
+  --control: 150ms;    /* control feedback  */
+  --shift: 300ms;      /* state / layout    */
+  --cinematic: 1750ms; /* the opening reveal */
+}
+
+* { min-width: 0; }
+
+html {
+  background: var(--color-void);
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-void);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-synthesis-weight: none;
+  overflow-x: clip;
+  text-rendering: optimizeLegibility;
+}
+
+:where(a[href], button, select, summary, label[for]) {
+  touch-action: manipulation;
+}
+
+:where(button:not(:disabled), select, summary, label[for]) {
+  cursor: pointer;
+}
+
+/* Display type: Inter 900, tight leading, negative tracking. */
+.t6-display {
+  font-weight: 900;
+  line-height: 0.84;
+  letter-spacing: -0.045em;
+  text-wrap: balance;
+}
+
+/* Metadata: small uppercase with deliberate tracking. */
+.t6-meta {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-ink-muted);
+}
+
+/* Chapter index marks. These encode real sequence - the homepage chapters are
+   numbered because they are read in order - and are not used decoratively. */
+.t6-index {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  color: var(--color-portal);
+  font-variant-numeric: tabular-nums;
+}
+
+/* -- Focus ----------------------------------------------------------------- */
+/* The ring is Turquoise (>=10.66 on every surface). `outline-offset` alone is
+   not enough over the 3D field, where the gap would show grass, so filled and
+   floating controls also paint an Onyx separator behind the ring. */
+:where(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+.t6-action:focus-visible,
+.t6-action-quiet:focus-visible,
+.t6-enter:focus-visible,
+.t6-enter-quiet:focus-visible,
+.t6-glass :focus-visible {
+  outline-offset: 3px;
+  box-shadow: 0 0 0 3px var(--color-void);
+}
+
+:root { scroll-padding-block: 6rem 7.5rem; }
+html { scroll-behavior: smooth; }
+
+.t6-skip {
+  position: absolute;
+  left: 0.75rem;
+  top: -4rem;
+  z-index: 100;
+  background: var(--color-focus);
+  color: var(--color-onyx);
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  transition: top var(--control) ease;
+}
+.t6-skip:focus { top: 0.75rem; }
+
+/* -- Reduced motion -------------------------------------------------------- */
+/* Nonessential camera work and parallax are REMOVED, not merely shortened. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::selection { background: var(--color-action); color: var(--color-onyx); }
+
+/* ============================================================================
+   Layer 3 - the cinematic system
+   ========================================================================= */
+
+/* The Cosmic sky. Painted in CSS so #23212C is exact and identical whether the
+   canvas, the static plate, or nothing at all sits on top of it. */
+.t6-cosmic-sky {
+  position: absolute;
+  inset: 0;
+  /* The scene fogs to exactly var(--color-sky), so the lower half of this
+     layer must stay on that value or a seam appears where the ground meets
+     the sky. Variation is kept to the upper area only. */
+  background:
+    radial-gradient(80% 46% at 26% 6%, #282631 0%, transparent 72%),
+    var(--color-sky);
+}
+/* A restrained vignette. It must sit ABOVE the canvas, not inside the sky
+   layer: the scene fogs the ground to the sky colour, so darkening only the
+   sky made the ground plane's far edge read as a hard line across the frame.
+   Onyx appears only here and at the deepest distance - it never erases the
+   Cosmic field. */
+.t6-scene-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(132% 104% at 50% 44%, transparent 46%, rgba(2, 2, 2, 0.66) 100%);
+}
+
+/* Readability scrim for the opening. The statement and entry controls sit over
+   a living scene, so contrast cannot be left to chance: this grades the left
+   and lower edges toward Onyx without flattening the field behind the mark. */
+.t6-copy-scrim {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(105deg, rgba(2, 2, 2, 0.9) 0%, rgba(2, 2, 2, 0.55) 26%, transparent 58%),
+    linear-gradient(to top, rgba(2, 2, 2, 0.85) 0%, rgba(2, 2, 2, 0.3) 22%, transparent 46%);
+}
+
+/* Full-viewport chapter. Uses svh so mobile browser chrome cannot clip it. */
+.t6-chapter {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Glass: the dock and rare overlays only, never every content block. */
+/* Glass: the dock and rare overlays only, never every content block. The dock
+   in the approved composition is a substantial slab, so this carries real
+   depth - inner light along the top edge, a deep drop shadow beneath - rather
+   than reading as a thin generic pill. */
+.t6-glass {
+  background:
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--color-cosmic) 36%, transparent) 0%,
+      color-mix(in srgb, var(--color-onyx) 30%, transparent) 100%
+    );
+  border: 1px solid color-mix(in srgb, var(--color-vanilla) 20%, transparent);
+  backdrop-filter: blur(26px) saturate(145%) !important;
+  -webkit-backdrop-filter: blur(26px) saturate(145%) !important;
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--color-vanilla) 24%, transparent),
+    inset 0 -1px 0 rgba(2, 2, 2, 0.24),
+    0 28px 70px -24px rgba(2, 2, 2, 0.86);
+}
+
+.t6-dock-home {
+  border: 1px solid color-mix(in srgb, var(--color-turquoise) 48%, transparent);
+  background: color-mix(in srgb, var(--color-cosmic) 34%, transparent);
+  backdrop-filter: blur(24px) saturate(145%);
+  -webkit-backdrop-filter: blur(24px) saturate(145%);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--color-vanilla) 18%, transparent),
+    0 0 36px color-mix(in srgb, var(--color-turquoise) 18%, transparent);
+}
+
+/* A hard signal edge marks editorial slabs. One rule, not a border on all sides. */
+.t6-signal-edge {
+  border-left: 2px solid var(--color-action);
+}
+
+/* A cheap grass horizon for interior routes: the same world, none of the cost
+   of a second realtime scene. */
+.t6-grass-horizon {
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: 42svh;
+  pointer-events: none;
+  background:
+    radial-gradient(90% 120% at 50% 118%, color-mix(in srgb, var(--color-turquoise) 12%, transparent) 0%, transparent 60%),
+    linear-gradient(to top, var(--color-teal) 0%, color-mix(in srgb, var(--color-teal) 45%, transparent) 42%, transparent 100%);
+  mask-image: linear-gradient(to top, #000 0%, #000 40%, transparent 100%);
+}
+
+.t6-ts-glow {
+  filter: drop-shadow(0 0 22px color-mix(in srgb, var(--color-turquoise) 45%, transparent));
+}
+
+/* -- Controls -------------------------------------------------------------- */
+
+.t6-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;   /* 44px */
+  padding-inline: 1.25rem;
+  border-radius: var(--radius-md);
+  background: var(--color-action);
+  color: var(--color-on-action);   /* 13.96 - AAA */
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  transition:
+    background-color var(--control) ease,
+    transform var(--control) ease;
+}
+.t6-action:hover {
+  background: var(--color-action-hover);   /* Onyx on hover fill = 11.92 - AAA */
+  transform: translateY(-1px);
+}
+.t6-action:active { transform: translateY(0); }
+
+.t6-action-quiet {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding-inline: 1.25rem;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-edge);
+  color: var(--color-ink);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color var(--control) ease,
+    border-color var(--control) ease;
+}
+.t6-action-quiet:hover {
+  background: color-mix(in srgb, var(--color-turquoise) 10%, transparent);
+  border-color: var(--color-action);
+}
+
+/* The hero entry control: a ring and a word, as in the approved composition. */
+.t6-enter {
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 2.75rem;
+  color: var(--color-ink);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.t6-enter-ring {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-action);
+  color: var(--color-action);
+  transition:
+    background-color var(--control) ease,
+    color var(--control) ease,
+    transform var(--control) ease;
+}
+.t6-enter:hover .t6-enter-ring {
+  background: var(--color-action);
+  color: var(--color-on-action);
+  transform: translateX(3px);
+}
+
+.t6-enter-quiet {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding-inline: 0.25rem;
+  color: var(--color-ink-muted);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color var(--control) ease;
+}
+.t6-enter-quiet:hover { color: var(--color-ink); }
+
+/* A resource that does not exist gets this explicit, readable notice rather
+   than a dead button. Danger colour is reserved for exactly this kind of use. */
+.t6-unavailable {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  min-height: 2.75rem;
+  padding-inline: 0.875rem;
+  border-radius: var(--radius-md);
+  border: 1px dashed var(--color-edge);
+  color: var(--color-ink-muted);
+  font-size: 0.8125rem;
+}
+
+.t6-panel {
+  background: var(--color-panel);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-lg);
+}
+
+/* Interior pages use the same physical glass language as the approved dock,
+   with route-specific ambient colour visible through the material. */
+.t6-page-shell {
+  --theme-accent: var(--color-turquoise);
+  --theme-secondary: var(--color-orchid);
+  position: relative;
+  min-height: 100svh;
+  isolation: isolate;
+  overflow: hidden;
+  background:
+    radial-gradient(75% 55% at 8% 4%, color-mix(in srgb, var(--theme-accent) 13%, transparent), transparent 70%),
+    radial-gradient(65% 52% at 94% 28%, color-mix(in srgb, var(--theme-secondary) 10%, transparent), transparent 72%),
+    linear-gradient(180deg, var(--color-cosmic), var(--color-void) 58%);
+}
+
+.t6-page-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.35;
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--theme-accent) 7%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--theme-accent) 7%, transparent) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: linear-gradient(to bottom, black, transparent 64%);
+}
+
+.t6-theme-library { --theme-accent: var(--color-turquoise); --theme-secondary: var(--color-navy); }
+.t6-theme-community { --theme-accent: var(--color-orchid); --theme-secondary: var(--color-signal); }
+.t6-theme-about { --theme-accent: var(--color-vanilla); --theme-secondary: var(--color-wine-ash); }
+.t6-theme-server { --theme-accent: var(--color-turquoise); --theme-secondary: var(--color-teal); }
+.t6-theme-bot { --theme-accent: var(--color-orchid); --theme-secondary: var(--color-navy); }
+.t6-theme-legal { --theme-accent: var(--color-orchid); --theme-secondary: var(--color-wine-ash); }
+
+.t6-glass-panel,
+.t6-glass-card {
+  background:
+    linear-gradient(
+      145deg,
+      color-mix(in srgb, var(--color-cosmic) 58%, transparent),
+      color-mix(in srgb, var(--color-onyx) 46%, transparent)
+    );
+  border: 1px solid color-mix(in srgb, var(--theme-accent, var(--color-turquoise)) 20%, transparent);
+  backdrop-filter: blur(20px) saturate(135%);
+  -webkit-backdrop-filter: blur(20px) saturate(135%);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--color-vanilla) 12%, transparent),
+    0 24px 70px -42px rgba(2, 2, 2, 0.95);
+}
+
+.t6-glass-panel { border-radius: 18px; }
+.t6-glass-card { border-radius: 16px; }
+
+.t6-archive-card {
+  --card-accent: var(--color-turquoise);
+  border: 1px solid color-mix(in srgb, var(--card-accent) 24%, var(--color-rule));
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, color-mix(in srgb, var(--color-cosmic) 68%, transparent), color-mix(in srgb, var(--color-onyx) 58%, transparent));
+  backdrop-filter: blur(20px) saturate(135%);
+  -webkit-backdrop-filter: blur(20px) saturate(135%);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--card-accent) 14%, transparent),
+    0 28px 70px -46px rgba(2, 2, 2, 0.98);
+  transition: border-color var(--shift) ease, transform var(--shift) var(--ease-signal), box-shadow var(--shift) ease;
+}
+
+.t6-archive-card:hover {
+  border-color: color-mix(in srgb, var(--card-accent) 52%, var(--color-edge));
+  transform: translateY(-3px);
+  box-shadow:
+    inset 0 1px 0 color-mix(in srgb, var(--card-accent) 20%, transparent),
+    0 32px 84px -42px color-mix(in srgb, var(--card-accent) 24%, rgba(2, 2, 2, 0.98));
+}
+
+.t6-social-card {
+  --social-accent: var(--color-turquoise);
+  --social-icon: var(--color-cosmic);
+  border: 1px solid color-mix(in srgb, var(--social-accent) 20%, var(--color-rule));
+  border-radius: 22px;
+  background: linear-gradient(145deg, color-mix(in srgb, var(--color-cosmic) 72%, transparent), color-mix(in srgb, var(--color-onyx) 52%, transparent));
+  backdrop-filter: blur(20px) saturate(135%);
+  -webkit-backdrop-filter: blur(20px) saturate(135%);
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--social-accent) 12%, transparent), 0 28px 65px -48px rgba(2, 2, 2, 0.96);
+  transition: transform var(--shift) var(--ease-signal), border-color var(--shift) ease, box-shadow var(--shift) ease;
+}
+
+.t6-social-card:hover {
+  transform: translateY(-3px);
+  border-color: color-mix(in srgb, var(--social-accent) 48%, var(--color-edge));
+  box-shadow: inset 0 1px 0 color-mix(in srgb, var(--social-accent) 18%, transparent), 0 32px 76px -44px color-mix(in srgb, var(--social-accent) 22%, rgba(2, 2, 2, 0.96));
+}
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .t6-glass,
+  .t6-glass-panel,
+  .t6-glass-card,
+  .t6-archive-card,
+  .t6-social-card {
+    background: var(--color-panel);
+  }
+}
+
+.t6-badge {
+  display: inline-flex;
+  min-height: 1.75rem;
+  align-items: center;
+  border: 1px solid color-mix(in srgb, var(--theme-accent, var(--color-turquoise)) 30%, transparent);
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--theme-accent, var(--color-turquoise)) 9%, transparent);
+  padding-inline: 0.75rem;
+  color: var(--color-ink);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.t6-input {
+  width: 100%;
+  min-height: 2.75rem;
+  border: 1px solid var(--color-edge);
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--color-onyx) 70%, transparent);
+  padding: 0.75rem 0.875rem;
+  color: var(--color-ink);
+  font: inherit;
+}
+
+.t6-input::placeholder { color: var(--color-ink-muted); }
+.t6-input:hover { border-color: var(--color-ink-muted); }
+.t6-input:focus-visible { border-color: var(--color-focus); }
+.t6-input option { background: var(--color-cosmic); color: var(--color-ink); }
