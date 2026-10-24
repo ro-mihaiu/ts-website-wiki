@@ -1,0 +1,31 @@
+{
+  "title": "Villager Mechanics on Bedrock",
+  "edition": "bedrock",
+  "slug": "villager-mechanics-on-bedrock",
+  "summary": "A practical guide to Bedrock villager linking, breeding, workstations, and trading hall layouts.",
+  "tags": [
+    "Villagers",
+    "Bedrock",
+    "Trading"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Bedrock villagers use a village system that can include beds, workstations, and a village center. That makes workstation linking especially important: a villager may claim a workstation from farther away than expected, and the claimed block can affect which villager restocks or changes profession."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Breeding and village size"
+    },
+    {
+      "type": "paragraph",
+      "text": "Breeders need willing adults, food, and spare valid beds. Keep the breeder's beds together and prevent babies from wandering into the trading hall, where they may create unexpected links. Doors are not a substitute for beds in modern Bedrock village mechanics."
+    },
+    {
+      "type": "paragraph",
+      "text": "For a stable trading hall, transport villagers one at a time, place the intended workstation directly beside the villager, and watch for the claim particles before trading. If a villager refuses to restock, check that it can reach its workstation and that the chunk is inside simulation distance."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "title": "Redstone Tick Timing and Update Order",
+  "edition": "java",
+  "slug": "redstone-tick-timing-and-update-order",
+  "summary": "A practical guide to game ticks, redstone ticks, repeater delays, and why update order changes circuit behavior.",
+  "tags": [
+    "Redstone",
+    "Timing",
+    "Technical"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Minecraft runs its simulation in game ticks: normally 20 per second. Redstone components use that same simulation but express delay in redstone ticks, where one redstone tick is two game ticks. A repeater set to one redstone tick therefore delays a signal by 0.1 seconds."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Signals do not update everywhere at once"
+    },
+    {
+      "type": "paragraph",
+      "text": "When a block changes, the game schedules neighbor updates. The order in which those updates are processed can decide whether a piston extends, a torch turns off, or a pulse is missed. Strong and weak power also matter: powering a block is not always the same as powering every component touching that block."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Designing a dependable clock"
+    },
+    {
+      "type": "paragraph",
+      "text": "Use repeaters when a farm needs a known delay, and leave enough pulse width for the target component to react. Fast clocks can create redundant updates, while very short observer pulses may be consumed by a line that is already powered. Test the circuit at the intended simulation distance, because unloaded components cannot keep a clock running."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example: staggered dispenser pulses"
+    },
+    {
+      "type": "paragraph",
+      "text": "Suppose four dispensers feed water into a collection channel. Put a repeater between each stage and add one redstone tick per step. The dispensers then fire in sequence instead of all at once, giving items time to enter the water stream and reducing missed or jammed drops."
+    },
+    {
+      "type": "code",
+      "language": "text",
+      "code": "lever -> repeater (1) -> dispenser\n                 -> repeater (2) -> dispenser"
+    }
+  ]
+}

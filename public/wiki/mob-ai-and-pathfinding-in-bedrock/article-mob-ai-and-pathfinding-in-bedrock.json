@@ -1,0 +1,31 @@
+{
+  "title": "Mob AI and Pathfinding in Bedrock",
+  "edition": "bedrock",
+  "slug": "mob-ai-and-pathfinding-in-bedrock",
+  "summary": "How Bedrock mob navigation, target selection, and pathfinding quirks affect lure, sorting, and trap designs.",
+  "tags": [
+    "Mob AI",
+    "Pathfinding",
+    "Bedrock"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Mob AI is not identical between editions. Bedrock mobs may choose a route, target, or collision edge differently from a Java mob in the same room. Farm designs that rely on a mob seeing a specific trapdoor, pathfinding around a corner, or selecting a villager should therefore be tested on the actual Bedrock version."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use controlled targets"
+    },
+    {
+      "type": "paragraph",
+      "text": "A lure works best when there is one obvious target and no alternate path. Remove stray doors, beds, villagers, or open corridors near the intended route. Solid walls and narrow channels make behavior more repeatable than decorative open rooms."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, a zombie lure chamber can put one villager behind a protected block, leave a two-block route toward it, and use a drop after the mob commits to the path. If some zombies stop, test line of sight and the route itself before adding more redstone."
+    }
+  ]
+}

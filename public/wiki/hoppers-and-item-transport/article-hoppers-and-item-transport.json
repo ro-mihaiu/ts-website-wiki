@@ -1,0 +1,40 @@
+{
+  "title": "Hoppers and Item Transport",
+  "edition": "java",
+  "slug": "hoppers-and-item-transport",
+  "summary": "Understand hopper cooldowns, inventories, item streams, and the layouts that keep storage systems fast and safe.",
+  "tags": [
+    "Hoppers",
+    "Storage",
+    "Items"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "A hopper checks for items above it and tries to push items into the container it points toward. Each successful transfer has a short cooldown, so a single hopper is deliberately slow. The best storage systems use water streams or hopper minecarts for bulk movement and reserve ordinary hoppers for short final connections."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Power and locking"
+    },
+    {
+      "type": "paragraph",
+      "text": "A hopper receiving a redstone signal locks and stops transferring. This is the basis of item filters: a comparator reads the filter hopper, and a precisely balanced redstone signal locks or unlocks the hopper at the right time. Always leave one buffer item in a filter so a temporary overflow does not change the signal unexpectedly."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "A faster collection line"
+    },
+    {
+      "type": "paragraph",
+      "text": "Items in a water stream can travel across many blocks before entering a short row of hoppers. Place the stream on ice or packed ice where appropriate, use signs or trapdoors to contain the water, and put hoppers only at the collection points. This reduces lag and makes the same iron supply serve more chests."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, a mob farm can send drops through a two-wide water channel into a single hopper line. If the line backs up, add a second parallel line or a hopper minecart beneath the drop zone rather than covering the entire floor with hoppers."
+    }
+  ]
+}

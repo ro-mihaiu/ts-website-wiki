@@ -1,0 +1,237 @@
+{
+  "title": "Shulker Farm Troubleshooting Guide",
+  "edition": "java",
+  "slug": "shulker-farm-troubleshooting",
+  "summary": "Fix the most common shulker farm problems: boat alignment, broken clocks, teleport-proofing, shulker health, and snow golem upkeep.",
+  "tags": [
+    "Shulkers",
+    "Farms",
+    "Troubleshooting"
+  ],
+  "lastUpdated": "2026-01-02",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "If your shulker farm is not duping, the cause is almost always one of a few setup mistakes: a shulker delivered by boat, a broken clock circuit, bad trapdoor or boat alignment, a low-health shulker, or surfaces the shulker can teleport onto. Work through this page top to bottom and your farm should be running again."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Never transport shulkers by boat"
+    },
+    {
+      "type": "paragraph",
+      "text": "Always bring shulkers to the farm in a minecart, never in a boat. A boat messes up the shulker's position alignment, so it cannot be ejected into the farm correctly and ends up stuck. Even if you only used a boat once and switched to a minecart afterwards, the shulker keeps the wrong alignment and still needs to be corrected."
+    },
+    {
+      "type": "paragraph",
+      "text": "If the shulker is still sitting in a boat, watch how to align it properly before breaking the boat - start the video at 12:49. If you already destroyed the boat, lure the shulker back into a boat and follow the same steps. If that fails, or you would rather skip the boat entirely, fetch a fresh shulker using a minecart."
+    },
+    {
+      "type": "video",
+      "src": "https://youtu.be/s7JZWGcnHYA",
+      "title": "Shulker alignment fix (relevant section starts at 12:49)",
+      "caption": "Watch from 12:49 for the correct shulker alignment steps."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Check the piston and trapdoor clock"
+    },
+    {
+      "type": "paragraph",
+      "text": "Stand near the farm and check that the piston is firing continuously and the trapdoor next to it is opening and closing. If they are, move on to the next section. If not, the clock has stalled: remove the pressure plate near the pistons and snow golems and place it back down. The piston and trapdoor should start cycling again."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-1.png",
+      "alt": "Pressure plate location near the pistons and snow golems",
+      "caption": "Remove and replace this pressure plate to restart the clock."
+    },
+    {
+      "type": "paragraph",
+      "text": "Also confirm the trapdoor opens toward the correct side. If it was placed facing the wrong way, break it and re-place it from the minecart side so it flips into the position shown below."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-2.png",
+      "alt": "Trapdoor orientation reference",
+      "caption": "Correct trapdoor orientation."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-3.png",
+      "alt": "Second trapdoor orientation reference",
+      "caption": "The trapdoor should open into this side."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-4.png",
+      "alt": "Placing the trapdoor from the minecart side",
+      "caption": "Place the trapdoor from the minecart side to flip its orientation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Check the boat alignment"
+    },
+    {
+      "type": "paragraph",
+      "text": "The two boats must be facing south with the exact alignment shown below. If yours look different, the farm cannot eject shulkers correctly - break both boats and let the dispensers place fresh ones."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-5.png",
+      "alt": "Correct boat alignment",
+      "caption": "Correct boat alignment: both boats facing south."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-6.png",
+      "alt": "Incorrect boat alignment",
+      "caption": "If your boats look like this, destroy and replace them."
+    },
+    {
+      "type": "paragraph",
+      "text": "After breaking the boats, make sure the dispenser near them is firing continuously. If it is not, destroy the pressure plate behind the dispenser and place it back down - that restarts it. While you are there, put two boats into the dispenser, and only do this once the area where the boats will be placed is fully built."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-7.png",
+      "alt": "Dispenser and pressure plate behind the boat area",
+      "caption": "Replace the pressure plate behind this dispenser if it stops firing."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-8.png",
+      "alt": "Boat placement area must be fully built",
+      "caption": "Finish the boat placement area before loading boats into the dispenser."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The backup chamber"
+    },
+    {
+      "type": "paragraph",
+      "text": "A shulker sitting idly in the backup chamber is normal. Open the trapdoor it is standing on (you can do this from above) and it will teleport away to where it is needed. Once your shulkers have duplicated and the farm has been running for a while, close that trapdoor again so a backup shulker is always there in case something goes wrong."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-9.png",
+      "alt": "Shulker resting in the backup chamber",
+      "caption": "A shulker waiting here is normal - open the trapdoor beneath it."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-10.png",
+      "alt": "Opening the backup chamber trapdoor from above",
+      "caption": "Open the trapdoor from above to send the backup shulker on its way."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Teleport-proof everything"
+    },
+    {
+      "type": "paragraph",
+      "text": "Shulkers teleport onto any valid surface, so double-check your build for exposed spots - including places like the one in the picture below. Teleport-proof every surface while transporting shulkers, or they will scatter across your base."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-11.png",
+      "alt": "Example of a surface a shulker teleported onto",
+      "caption": "An un-proofed surface let this shulker escape."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-12.png",
+      "alt": "Shulkers scattered on un-proofed surfaces",
+      "caption": "This is what happens when transport routes are not teleport-proofed."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Best transport method: top slabs with rails on them, pushed along with a furnace minecart.",
+        "If you use full blocks for building or decorating, teleport-proof them by attaching buttons to all six exposed sides so shulkers cannot land there."
+      ]
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-13.png",
+      "alt": "Full block teleport-proofed with buttons on all sides",
+      "caption": "Button every exposed face of a full block to block teleports."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Shulker health and opening"
+    },
+    {
+      "type": "paragraph",
+      "text": "The shulker must be open when the snow golems hit it. A closed shulker will not duplicate and will simply die. If yours stays closed, walk close enough for it to see you - it will open and start duping. Also make sure you are not on peaceful mode, since that removes the shulker entirely."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-14.png",
+      "alt": "Shulker open in the farm",
+      "caption": "The shulker must be open like this while being hit."
+    },
+    {
+      "type": "paragraph",
+      "text": "Health matters too: a shulker needs to be above 50% health to dupe reliably, otherwise it risks dying. If you damaged it while transporting it from the End city, splash it with a health or regeneration potion before releasing it into the farm. Even if it is already inside, there is no harm in splashing it again if you recall damaging it."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Shulker not entering the golem chamber"
+    },
+    {
+      "type": "paragraph",
+      "text": "If the shulker is not getting into the correct chamber near the snow golem, or teleports away instantly, it is most likely too low on health and is escaping to avoid dying. Heal it with a regeneration or health splash potion. Also verify the single piece of string in front of the shulker near the snow golem area is placed - not the strings near the boats up top. Then be patient: the shulker may take some time to notice the valid teleport spot. Reloading the area or the world can help."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/shulker-farm-troubleshooting/image-15.png",
+      "alt": "String placed in front of the shulker",
+      "caption": "The string goes directly in front of the shulker, near the snow golems."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Keep the snow golems alive"
+    },
+    {
+      "type": "paragraph",
+      "text": "Snow golems take damage in warm biomes and in the rain. Build the farm in a cold biome, or roof it off so golems are never exposed to rainfall. If your golems keep dying, the biome is the most likely reason."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use the official schematic"
+    },
+    {
+      "type": "paragraph",
+      "text": "To make life easier and guarantee the farm is built correctly, load the official schematic below with a litematic-compatible tool such as Litematica and compare it against your build."
+    },
+    {
+      "type": "link",
+      "label": "Shulker Farm og.litematic (MediaFire)",
+      "href": "https://www.mediafire.com/file/gi7mczijfrf1bwu/Shulker+Farm+og.litematic/file",
+      "description": "Official schematic file for the farm, hosted on MediaFire."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Do not aggravate the shulkers"
+    },
+    {
+      "type": "paragraph",
+      "text": "Avoid letting the shulkers see you too much - for example by flying on top of the farm. If they become aggravated at you, their bullets take unpredictable paths, which can destroy the boats or kill the snow golems. Grab what you need from the chests and leave."
+    },
+    {
+      "type": "paragraph",
+      "text": "If this guide did not fix your farm, open a ticket in the support channel and mention the helper team. Enjoy your farm!"
+    }
+  ]
+}

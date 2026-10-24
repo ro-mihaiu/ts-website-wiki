@@ -1,0 +1,63 @@
+{
+  "title": "Bedrock Dupers and Farm Addons",
+  "edition": "bedrock",
+  "slug": "bedrock-dupers-and-farm-addons",
+  "summary": "A reference page for the TheySix Bedrock TNT and string duper downloads, addon files, worlds, and tutorial clips.",
+  "tags": [
+    "Bedrock",
+    "Addons",
+    "Dupers"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "These resources are intended for Bedrock and MCPE on consoles, mobile, and Windows 10/11 Edition. Check the world or addon description for compatibility before importing anything into a survival world, and keep a backup before testing a duper."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "TNT duper"
+    },
+    {
+      "type": "paragraph",
+      "text": "The TNT Duper download is available as a MediaFire archive. The simple module and single-drop module are provided as separate demonstrations so you can compare the templates with the version of the farm you are building."
+    },
+    {
+      "type": "list",
+      "items": [
+        "TNT Duper archive: https://www.mediafire.com/file/93npfbeodmwal3c/TNT+Duper.zip/file",
+        "String Duper world archive: https://www.mediafire.com/file/m5723dru3umj7dm/String+Duper+[WORLD].zip/file",
+        "String Duper addon: https://www.mediafire.com/file/fl794z3m65fbuoz/String+Duper+1.0.0.mcaddon/file",
+        "String Duper Bedrock world: https://www.mediafire.com/file/b8t8z27rdd826wz/String+Duper+[WORLD].mcworld/file"
+      ]
+    },
+    {
+      "type": "video",
+      "src": "https://youtu.be/Z27KUuTAFgw",
+      "title": "Simple TNT duper module",
+      "caption": "Simple TNT Duper module reference clip."
+    },
+    {
+      "type": "video",
+      "src": "https://youtu.be/tSJ-T8MwsR0",
+      "title": "Single-drop TNT duper module",
+      "caption": "Single-drop TNT Duper module reference clip."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "String duper resources"
+    },
+    {
+      "type": "paragraph",
+      "text": "The String Duper resources include a world file, an addon-only package, and a tutorial/world package. The TheySix YouTube channel is listed as the video source in the original community notes."
+    },
+    {
+      "type": "video",
+      "src": "https://youtu.be/XfazetSl3hk",
+      "title": "String duper tutorial",
+      "caption": "String Duper tutorial reference clip."
+    }
+  ]
+}

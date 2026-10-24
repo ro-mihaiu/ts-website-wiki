@@ -1,0 +1,53 @@
+{
+  "title": "Mob Spawning Mechanics",
+  "edition": "java",
+  "slug": "mob-spawning-mechanics",
+  "summary": "How light levels, spawnable spaces, mob caps, and player distance control hostile mob farms in Java Edition.",
+  "tags": [
+    "Spawning",
+    "Mob Farms",
+    "Technical"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Java mob spawning is a combination of eligible blocks, player distance, and several caps. A hostile mob needs a valid spawn space, a location far enough from the player to spawn, and enough room for its collision box. The farm only becomes reliable when all three conditions are controlled."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Light and spawnable blocks"
+    },
+    {
+      "type": "paragraph",
+      "text": "Most hostile mobs require block light level 0 in modern Java versions. Skylight is also important: an exposed roof can let daylight prevent spawns even when the floor itself is dark. Solid, full blocks make predictable floors; slabs, glass, and other partial blocks can prevent the mob category you are targeting from spawning."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Distance and mob caps"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hostile mobs generally spawn outside the player's immediate no-spawn radius and are removed or stop being useful when they are too far away. The hostile mob cap is shared by loaded eligible mobs around players, so caves and the surface can steal attempts from a dark-room farm. Spawn-proofing nearby spaces is often more valuable than adding another layer to the farm."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "A practical farm example"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a simple creeper farm, place dark spawning floors above the ocean, keep the collection point within the active spawning range, and move mobs out of the spawning area quickly with trapdoors and water. If rates are low, first inspect caves and verify that the floors really have light level 0 before rebuilding the clock."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Use the F3 light readout or a light-level mod to verify floors.",
+        "Keep the player in the farm's useful AFK range.",
+        "Remove nearby alternative spawning spaces before increasing farm size."
+      ]
+    }
+  ]
+}

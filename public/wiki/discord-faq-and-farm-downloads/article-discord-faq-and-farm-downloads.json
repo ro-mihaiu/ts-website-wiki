@@ -1,0 +1,63 @@
+{
+  "title": "Discord FAQ and Farm Downloads",
+  "edition": "discord",
+  "slug": "discord-faq-and-farm-downloads",
+  "summary": "Answers to common TheySix questions about shaders, resource packs, farm files, download numbers, and mob-farm setup.",
+  "tags": [
+    "Discord",
+    "FAQ",
+    "Downloads"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "The TheySix FAQ channel is maintained by administrators and designated moderators. It covers recurring setup questions so members can troubleshoot common issues before opening a support ticket."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recommended visual setup"
+    },
+    {
+      "type": "paragraph",
+      "text": "The shader pack listed in the community FAQ is Complementary. The resource packs mentioned there are Better Leaves Addon, Crops 3D, and VanillaTweaks. Shader settings can vary by version and hardware, so treat the supplied configuration as a reference rather than a guarantee for every computer."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Finding a farm's files"
+    },
+    {
+      "type": "paragraph",
+      "text": "A video description may include a Download Number, or DN. In the [bot commands channel, run the Archiver Bot command with that number, for example /dn 467. The bot returns the matching archive information and links. World files are stored in worlds, while Java schematic files are stored in schematics."
+    },
+    {
+      "type": "paragraph",
+      "text": "A schematic button on the website may lead to a placeholder when that farm has no schematic. Check the farm's available links or use /dn before assuming the file is missing from the archive."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Rates and AFK placement"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Watch the tutorial as well as downloading the files: clocks, inputs, and farm-specific mechanics are explained in the video.",
+        "Most mob farms need a nearby player. On Java, hostile mobs use a 128-block despawn boundary, so an AFK platform is often placed around 120-128 blocks above the lowest spawning area, depending on the design.",
+        "On multiplayer servers, keep the farm and other players within a deliberate range so another player's mob cap does not fill the available hostile mob population.",
+        "Do not leave the active area if the farm depends on loaded chunks. Unloading can stop the farm and can interrupt systems such as moss-to-cobblestone generators."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Security and visibility"
+    },
+    {
+      "type": "paragraph",
+      "text": "Enable Show All Channels if download channels are hidden. Also avoid join-leave loops, message spam, and ping spam because the server's security system may flag the account."
+    }
+  ]
+}

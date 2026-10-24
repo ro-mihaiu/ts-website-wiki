@@ -1,0 +1,36 @@
+{
+  "title": "Bedrock Redstone Differences",
+  "edition": "bedrock",
+  "slug": "bedrock-redstone-differences",
+  "summary": "Why Java redstone tutorials cannot always be copied to Bedrock, including quasi-connectivity and update behavior.",
+  "tags": [
+    "Redstone",
+    "Bedrock",
+    "Differences"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Bedrock redstone follows the same broad idea of power, signal strength, and scheduled updates, but many Java circuits depend on Java-only behavior. The most famous example is quasi-connectivity: Java pistons can react to power above or beside their space in ways that Bedrock pistons generally do not."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Build the intent, not the shape"
+    },
+    {
+      "type": "paragraph",
+      "text": "Observers, pistons, dispensers, and redstone dust can also differ in update order and pulse handling. A compact Java door may need an explicit repeater or an extra observer on Bedrock. When porting a farm, identify what event should happen, then provide a direct signal for that event instead of preserving every block from the original schematic."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example: piston door"
+    },
+    {
+      "type": "paragraph",
+      "text": "If a Java piston door opens when a block above the piston changes, add a direct redstone line or a target block that Bedrock can clearly power. Test both opening and closing with the chunk loaded; a circuit that works once may still fail when an observer pulse arrives during another update."
+    }
+  ]
+}

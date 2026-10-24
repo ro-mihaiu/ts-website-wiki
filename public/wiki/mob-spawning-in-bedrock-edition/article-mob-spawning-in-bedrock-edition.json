@@ -1,0 +1,31 @@
+{
+  "title": "Mob Spawning in Bedrock Edition",
+  "edition": "bedrock",
+  "slug": "mob-spawning-in-bedrock-edition",
+  "summary": "The Bedrock spawning volume, simulation distance, and density rules that change how mob farms should be built.",
+  "tags": [
+    "Spawning",
+    "Bedrock",
+    "Mob Farms"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Bedrock Edition does not use Java's spawning behavior as a simple replacement. Spawn attempts are strongly affected by simulation distance, the player's position, and the size of the eligible spawning area. A farm that works on Java may have the wrong height, platform spacing, or AFK position on Bedrock."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Density and nearby mobs"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bedrock applies density limits to groups of mobs, so a large platform is not automatically better. Mobs can also fill the available population around the player and reduce attempts in the farm. Clearing caves, choosing a controlled biome, and moving mobs away from the spawning area quickly are common ways to improve rates."
+    },
+    {
+      "type": "paragraph",
+      "text": "For example, test a general mob farm at the intended simulation distance with the player standing at the documented AFK point. If the farm is empty, change one variable at a time: check simulation distance, inspect nearby caves, then adjust the platform height rather than copying a Java tutorial's coordinates."
+    }
+  ]
+}

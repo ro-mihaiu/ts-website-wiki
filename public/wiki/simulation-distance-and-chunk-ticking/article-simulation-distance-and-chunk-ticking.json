@@ -1,0 +1,31 @@
+{
+  "title": "Simulation Distance and Chunk Ticking",
+  "edition": "bedrock",
+  "slug": "simulation-distance-and-chunk-ticking",
+  "summary": "What Bedrock simulation distance actually keeps active, and how to place AFK spots for farms that keep processing.",
+  "tags": [
+    "Chunks",
+    "Simulation Distance",
+    "Bedrock"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Render distance controls what the client draws; simulation distance controls how much of the world continues to process entities, redstone, crops, and other gameplay systems. A farm can be visible while its collection system is outside the active simulation area and effectively paused."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Place the player around the farm"
+    },
+    {
+      "type": "paragraph",
+      "text": "The farm's spawning platforms, kill chamber, item transport, and storage should all be inside the active simulation range. Chunk borders can help diagnose a farm that stops at a particular direction. Changing simulation distance changes the active area, so record the setting used for any rates you publish."
+    },
+    {
+      "type": "paragraph",
+      "text": "As an example, do not AFK directly over a Bedrock mob farm if that puts its kill chamber or water stream outside the active radius. Move the AFK platform until every critical component remains simulated, then run the same timed test after relogging to catch loading-order issues."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Villager Breeding and Trading",
+  "edition": "java",
+  "slug": "villager-breeding-and-trading",
+  "summary": "The beds, food, workstations, and linking rules that make Java villager halls and breeders dependable.",
+  "tags": [
+    "Villagers",
+    "Trading",
+    "Breeding"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Villagers breed when they are willing, can reach enough valid beds, and have access to food. Bread, carrots, potatoes, and beetroot can make villagers willing; throwing food into a small breeder is usually more reliable than waiting for villagers to share it."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Beds and linking"
+    },
+    {
+      "type": "paragraph",
+      "text": "A breeder needs an unclaimed bed with enough open space above it for the baby villager. Villagers search for points of interest, including beds and workstations, and can link to a different one than the block you expected. Build breeders away from other beds and workstations, then add the destination workstations after transport."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Trading without losing discounts"
+    },
+    {
+      "type": "paragraph",
+      "text": "Trade once to lock a villager's profession and offers. A novice librarian can be rerolled by breaking and replacing its lectern before the first trade; after trading, the offers are fixed. Curing mechanics and demand can change prices, but they do not replace the need to control workstation ownership."
+    },
+    {
+      "type": "paragraph",
+      "text": "As a concrete layout, put three beds behind a breeder, feed two adult villagers, and use a trapdoor or water stream to move babies into a holding area. Keep the trading hall's beds and lecterns separate so new villagers cannot claim them during breeding."
+    }
+  ]
+}

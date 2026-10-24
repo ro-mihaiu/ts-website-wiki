@@ -1,0 +1,63 @@
+{
+  "title": "Using TheySix Support",
+  "edition": "discord",
+  "slug": "using-theysix-support",
+  "summary": "What to collect before opening a ticket and which TheySix support category matches your issue.",
+  "tags": [
+    "Discord",
+    "Support",
+    "Troubleshooting"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "TheySix Support is intended for real farm, server, and community issues. Do not create tickets just to test the system; misuse can result in moderation action. Choose the closest ticket category and include enough technical detail for the support team to reproduce the problem."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Prepare this information"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "State whether you are playing Java Edition or Bedrock Edition.",
+        "Say whether the world is singleplayer or multiplayer.",
+        "List any mods, add-ons, or plugins.",
+        "Provide the farm's tutorial or YouTube link.",
+        "Describe exactly what is going wrong and when it happens.",
+        "Attach a screenshot or video. For advanced problems, include a world download or schematic if possible."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ticket categories"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Java Farm: help with Java farms and farm mechanics.",
+        "Bedrock Farm: help with Bedrock farms and Bedrock-specific behavior.",
+        "Report a Bug: server bugs, glitches, exploits, or technical issues.",
+        "Report a Person: rule-breaking, griefing, stealing, harassment, or other misconduct; provide evidence.",
+        "Partnership: collaboration requests from creators, community leaders, or brands. TheySix does not accept partnership tickets from Minecraft servers."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Common answers"
+    },
+    {
+      "type": "paragraph",
+      "text": "A Bedrock farm not working on a multiplayer server may be affected by the server software or configuration. Ask the server staff whether it is a Java or Bedrock server, then use the matching support category; using a Bedrock client does not change the server edition."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you do not know what DN means, find the Download Number in the video's description and run /dn followed by that number in the bot channel. The bot will return the associated world and schematic archive links."
+    }
+  ]
+}

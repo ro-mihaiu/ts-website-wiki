@@ -1,0 +1,97 @@
+{
+  "title": "TheySix Discord Rules",
+  "edition": "discord",
+  "slug": "theysix-discord-rules",
+  "summary": "The community standards for keeping the TheySix Discord welcoming, organized, and safe for everyone.",
+  "tags": [
+    "Discord",
+    "Rules",
+    "Community"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "These rules apply to everyone in the TheySix Discord. They are written to keep conversations useful, protect members from harassment, and give staff a clear basis for moderation. When a situation is not covered word-for-word, use the same principles of respect, safety, and good-faith participation."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Community rules"
+    },
+    {
+      "type": "ruleList",
+      "items": [
+        {
+          "title": "Be respectful",
+          "text": "Treat other members with kindness and consideration. Disagreements are fine; personal attacks, intimidation, and hostile behavior are not."
+        },
+        {
+          "title": "Use the right channel",
+          "text": "Keep messages in the channel that matches their subject. This keeps the server searchable and makes it easier for members to find useful information."
+        },
+        {
+          "title": "Keep content family-friendly",
+          "text": "NSFW content is not allowed anywhere in the server, including links, images, profiles, and messages."
+        },
+        {
+          "title": "Follow Discord policies",
+          "text": "Your activity must comply with Discord's Terms of Service and Community Guidelines, in addition to these server rules."
+        },
+        {
+          "title": "No hate or slander",
+          "text": "Racist comments, hateful language, slander, and toxic messages are not allowed. Help keep the community welcoming and free from discrimination."
+        },
+        {
+          "title": "No advertising",
+          "text": "Do not advertise in the server, direct messages, or your profile when it is used to promote content to TheySix members. Paid services, shops, and paid promotions are not allowed."
+        },
+        {
+          "title": "Tag staff only when needed",
+          "text": "Avoid unnecessary staff mentions. Use the dedicated helpers and support channels first so staff can respond efficiently."
+        },
+        {
+          "title": "Do not tag protected roles",
+          "text": "Do not tag TheySix or staff roles. The only exception is when a staff member specifically asks you to do so."
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Official policies"
+    },
+    {
+      "type": "paragraph",
+      "text": "Discord's platform policies and Minecraft's legal terms also apply. The server rules cannot grant permission to break either platform's policies. Read the current official documents here:"
+    },
+    {
+      "type": "link",
+      "label": "Discord Terms of Service",
+      "href": "https://discord.com/terms",
+      "description": "The contractual terms for using Discord."
+    },
+    {
+      "type": "link",
+      "label": "Discord Community Guidelines",
+      "href": "https://discord.com/guidelines",
+      "description": "Discord's standards for safe and respectful communities."
+    },
+    {
+      "type": "link",
+      "label": "Minecraft EULA",
+      "href": "https://www.minecraft.net/eula",
+      "description": "Minecraft's End User License Agreement. It matters when community activity involves Minecraft assets, services, or monetization."
+    },
+    {
+      "type": "link",
+      "label": "Minecraft Usage Guidelines",
+      "href": "https://www.minecraft.net/usage-guidelines",
+      "description": "Additional guidance for using Minecraft names, assets, and related community content."
+    },
+    {
+      "type": "paragraph",
+      "text": "Thanks for helping make TheySix a respectful and enjoyable place to build, learn, and share Minecraft projects."
+    }
+  ]
+}

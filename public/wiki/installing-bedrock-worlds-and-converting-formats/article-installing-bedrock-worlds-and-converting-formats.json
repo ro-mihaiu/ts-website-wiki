@@ -1,0 +1,53 @@
+{
+  "title": "Installing Bedrock Worlds and Converting Formats",
+  "edition": "bedrock",
+  "slug": "installing-bedrock-worlds-and-converting-formats",
+  "summary": "How to install .mcworld files on Android and use Chunker to convert worlds between editions or versions.",
+  "tags": [
+    "Bedrock",
+    "Worlds",
+    "Installation"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Bedrock worlds are commonly distributed as .mcworld files or as .zip archives. On Android, a file manager can move the download into Minecraft; the exact menus vary by Android version, but the file extension determines whether conversion is needed first."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Install a downloaded world"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Install a file manager such as File Manager Plus from the Play Store.",
+        "Find the world in your Downloads folder or the location where your browser saved it.",
+        "If the file already ends in .mcworld, skip conversion and open it.",
+        "For a .zip archive, rename the extension from .zip to .mcworld. If the download is an unpacked world folder, compress its contents first and then rename the resulting archive.",
+        "Tap the .mcworld file, choose Minecraft in the Open with dialog, and allow Minecraft to import the world."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Convert with Chunker"
+    },
+    {
+      "type": "paragraph",
+      "text": "Chunker can convert a world from Bedrock to Java or Java to Bedrock, and it can help downgrade world versions. Upload or drag the supported world folder or Bedrock .mcworld file into Chunker, choose the destination platform and version, then export the converted world."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/installing-bedrock-worlds-and-converting-formats/image-1.png",
+      "alt": "Chunker world conversion interface",
+      "caption": "Chunker provides world preview and conversion settings."
+    },
+    {
+      "type": "paragraph",
+      "text": "Back up the original world before converting. Conversion tools cannot preserve every edition-specific mechanic, entity, or block perfectly, so verify farms and redstone after importing the result."
+    }
+  ]
+}

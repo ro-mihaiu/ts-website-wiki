@@ -1,0 +1,52 @@
+{
+  "title": "Community Suggestions and Tags",
+  "edition": "discord",
+  "slug": "community-suggestions-and-tags",
+  "summary": "How to write useful TheySix suggestions and what the suggestion status tags mean.",
+  "tags": [
+    "Discord",
+    "Suggestions",
+    "Community"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Suggestions should be respectful, specific, and easy to evaluate. Posts that violate the community guidelines may be locked or removed, and duplicate suggestions make it harder to track useful ideas."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Good suggestion habits"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Explain the idea clearly enough that someone else can picture the result.",
+        "Search for existing suggestions before posting a duplicate.",
+        "Do not bump a suggestion unless you are adding useful information.",
+        "Keep replies relevant to the suggestion rather than starting an unrelated discussion."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Status tags"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Implemented: the feature has been added.",
+        "Accepted: TheySix intends to implement it if practical; timing is not guaranteed.",
+        "Undetermined: the idea looks promising but still needs review for feasibility or balance.",
+        "Denied: the idea is not planned because it is unsuitable, impossible, or too difficult.",
+        "Duplicate: the suggestion already exists and the thread may be locked.",
+        "Unmarked: the suggestion has not been reviewed yet or does not fit another status."
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Many suggestions may be read without receiving a status tag. Tags are used as a planning aid, not as a promise that every accepted idea will ship immediately."
+    }
+  ]
+}

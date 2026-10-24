@@ -1,0 +1,45 @@
+{
+  "title": "Bedrock Directions and Trident Killers",
+  "edition": "bedrock",
+  "slug": "bedrock-directions-and-trident-killers",
+  "summary": "Use cardinal directions when building Bedrock farms and understand the moving parts of a trapdoor-based trident killer.",
+  "tags": [
+    "Bedrock",
+    "Trident Killer",
+    "Farm Building"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Bedrock farms can depend on the direction a block faces. Before building a design, check the cardinal directions in-game and compare them with the tutorial. This matters especially for observers, pistons, portal layouts, and trident-killer chambers."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/bedrock-directions-and-trident-killers/image-1.png",
+      "alt": "Minecraft Bedrock direction diagram",
+      "caption": "Use the tutorial's north, south, east, and west references when orienting the build."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "How a trapdoor trident killer works"
+    },
+    {
+      "type": "paragraph",
+      "text": "A trapdoor-based trident killer uses the chamber geometry and moving blocks to keep thrown tridents in a controlled path while mobs are held in the kill space. The correct orientation and timing are important: copying the footprint while rotating key components can cause tridents to miss or mobs to escape."
+    },
+    {
+      "type": "video",
+      "src": "https://youtu.be/ead_FZ7yRVU",
+      "title": "Bedrock trapdoor trident killer demonstration",
+      "caption": "Reference clip for the trapdoor-based Bedrock trident killer."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/bedrock-directions-and-trident-killers/image-2.png",
+      "alt": "Bedrock split destiny mob spawning diagram",
+      "caption": "Bedrock spawning behavior can vary by farm design, so test the complete build in its target environment."
+    }
+  ]
+}

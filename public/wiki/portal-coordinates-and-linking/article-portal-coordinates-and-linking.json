@@ -1,0 +1,54 @@
+{
+  "title": "Portal Coordinates and Linking",
+  "edition": "bedrock",
+  "slug": "portal-coordinates-and-linking",
+  "summary": "Convert Nether coordinates correctly and space multiple portals so Minecraft links them to the intended destinations.",
+  "tags": [
+    "Bedrock",
+    "Nether",
+    "Coordinates"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "For the X and Z axes, one block in the Nether corresponds to about eight blocks in the Overworld. To plan a portal, divide the Overworld X and Z by eight when travelling to the Nether, or multiply Nether X and Z by eight when returning. Y is not converted by the same rule."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Measure the right point"
+    },
+    {
+      "type": "paragraph",
+      "text": "For a single portal, use the center coordinates of the portal frame. With multiple portals, calculate from the center of the portal group or from each intended portal position, not from an arbitrary corner. A portal conversion tool such as maximumfx.nl/portal/en/ can help check the arithmetic."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/portal-coordinates-and-linking/image-1.png",
+      "alt": "Diagram showing Nether and Overworld coordinate conversion",
+      "caption": "Multiply or divide X and Z by eight when planning the corresponding dimension."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Avoid accidental links"
+    },
+    {
+      "type": "paragraph",
+      "text": "When several portals are nearby, Minecraft searches for the closest valid portal in the destination dimension. Portals that are too close can link together unexpectedly. Keep intended pairs aligned, separate competing portals, and test each route from both dimensions after lighting the complete set."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/portal-coordinates-and-linking/image-2.png",
+      "alt": "Diagram showing portal spacing and coordinate conversion",
+      "caption": "Plan the X and Z positions before building a multi-portal network."
+    },
+    {
+      "type": "image",
+      "src": "/wiki/portal-coordinates-and-linking/image-3.png",
+      "alt": "Diagram showing portal linking for multiple portals",
+      "caption": "Multiple portals need deliberate spacing and center coordinates."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "title": "Pistons, Observers, and Flying Machines",
+  "edition": "java",
+  "slug": "pistons-observers-and-flying-machines",
+  "summary": "Learn how observer pulses, piston limits, slime, and honey blocks combine into reliable Java flying machines.",
+  "tags": [
+    "Pistons",
+    "Observers",
+    "Flying Machines"
+  ],
+  "lastUpdated": "2026-09-13",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Observers detect a block update and emit a short redstone pulse from their back face. That pulse is often enough to trigger a piston, but it is not a continuous signal. Orient the observer's face toward the block that changes and verify the output side before connecting the circuit."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "The 12-block piston limit"
+    },
+    {
+      "type": "paragraph",
+      "text": "A piston can push or pull a maximum of 12 blocks in one movement. Slime blocks stick to many neighboring blocks, while honey blocks stick to a different set and do not stick to slime. Separating the two materials lets a flying machine carry a harvest head without dragging the whole machine together."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "text": "Example: a farm sweeper"
+    },
+    {
+      "type": "paragraph",
+      "text": "A two-direction flying machine can sweep a row of leaves or crops, stop at an unmovable station, and return when an observer detects the station's update. Keep the machine under the piston limit, put the return trigger at a fixed coordinate, and test the station with the farm unloaded and reloaded before relying on it unattended."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Count every movable block attached to a piston.",
+        "Use honey and slime separation intentionally, not interchangeably.",
+        "Give the machine a clear, solid stop so it cannot overshoot its return trigger."
+      ]
+    }
+  ]
+}
