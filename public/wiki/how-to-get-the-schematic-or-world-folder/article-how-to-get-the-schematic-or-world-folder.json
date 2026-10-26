@@ -81,6 +81,10 @@
                     "content": "Save the file in your ~/Downloads or C:\\Users\\%username%\\Downloads folder."
                 }
             ]
+        },
+        {
+            "type": "paragraph",
+            "content": "If you don't know how to use the schematic or world folder, check out [How to use a world folder](https://wiki-theysix.ro-mihaiu.xyz/w/how-to-use-a-world-folder) and [How to use a litematica file and add it in Minecraft Java](https://wiki-theysix.ro-mihaiu.xyz/w/how-to-use-a-litematica-file-and-add-it-in-minecraft-java)."
         }
     ]
 }

@@ -1,0 +1,101 @@
+{
+  "title": "How to Use a Litematica File in Minecraft Java Edition",
+  "edition": "java",
+  "slug": "how-to-use-a-litematica-file-and-add-it-in-minecraft-java",
+  "summary": "How to install Litematica and load .litematic, .schematic, or .nbt files across Windows, macOS, and Linux.",
+  "tags": [
+    "Litematica",
+    "MaLiLib",
+    "Schematic",
+    "Building",
+    "Fabric",
+    "Java"
+  ],
+  "lastUpdated": "2026-10-26",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Prerequisites"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "A Fabric, Quilt, or other compatible modded client for your Minecraft version",
+        "Litematica and MaLiLib downloaded for the same version"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Installing Fabric (if needed)"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Download the Fabric Installer from the [official Fabric website](https://fabricmc.net/use/installer/).",
+        "Run the installer and select the correct Minecraft version for your mods.",
+        "If you are unable to run the installer, install Java from [java.com](https://www.java.com/en/download/).",
+        "Launch the Fabric profile once to generate the necessary files and folders."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Installing Litematica"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Open your Minecraft instance directory (see locations below).",
+        "Place Litematica and MaLiLib into the `mods/` folder.",
+        "Launch your modded instance once more to ensure the mods load correctly."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Adding a schematic file"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Download your `.litematic`, `.schematic`, or `.nbt` file.",
+        "Place it into the `schematics/` folder inside your Minecraft instance directory. Do not create this folder manually - launching the game with Litematica installed will generate it automatically.",
+        "Launch Minecraft, load into a world, and press M to open the Litematica menu.",
+        "Go to Load Schematics to view and load your newly added file."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Instance directory locations"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Windows: `%APPDATA%\\.minecraft\\` (or your custom launcher instance folder)",
+        "macOS: `~/Library/Application Support/minecraft/`",
+        "Linux: `~/.minecraft/` (for Flatpak installs, use `~/.var/app/com.mojang.Minecraft/.minecraft/`)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recommended tutorials"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "[Litematica Usage Tutorial 1](https://www.youtube.com/watch?v=aRaqyKPRWQE)",
+        "[Litematica Usage Tutorial 2](https://www.youtube.com/watch?v=pTgaqmIgpVM)"
+      ]
+    }
+  ]
+}

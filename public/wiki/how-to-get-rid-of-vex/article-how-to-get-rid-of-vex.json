@@ -1,0 +1,63 @@
+{
+  "title": "How to Get Rid of Vexes?",
+  "edition": "java",
+  "slug": "how-to-get-rid-of-vex",
+  "summary": "Ways to remove vexes summoned by evokers, including the Vexxed plugin and other methods.",
+  "tags": [
+    "Vex",
+    "Evoker",
+    "Raids",
+    "Woodland Mansions",
+    "Plugins"
+  ],
+  "lastUpdated": "2026-10-26",
+  "body": [
+    {
+      "type": "paragraph",
+      "text": "Vexes are small flying hostile mobs summoned by Evokers. They're notorious for dealing high damage, passing through blocks, and swarming players. Here are reliable ways to deal with them."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Use a plugin (easiest for servers)"
+    },
+    {
+      "type": "paragraph",
+      "text": "For Spigot/Paper servers, the [Vexxed](https://www.spigotmc.org/resources/vexxed.121205/) plugin by AvatarKage automatically removes all vexes summoned by a specific Evoker when that Evoker is defeated. This is perfect for raids and Woodland Mansions where you don't want to deal with lingering vexes."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Download Vexxed from SpigotMC",
+        "Place the .jar in your server's plugins/ folder",
+        "Restart the server",
+        "Defeat Evokers as normal - all of their vexes will be removed automatically"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Vanilla methods"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Kill them directly - Vexes have 14 HP and can be killed with any weapon, though their mobility makes them tricky.",
+        "Use area damage - Splash potions, TNT, or other AoE effects can clear groups faster.",
+        "Build defensively - Since vexes phase through blocks, walls won't stop them. Focus on mobility and crowd control.",
+        "Remove the Evoker source - Vexes are summoned by Evokers and will remain until killed or the world is reloaded in some edge cases. Killing the Evoker doesn't immediately despawn vexes in vanilla."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Notes"
+    },
+    {
+      "type": "paragraph",
+      "text": "In vanilla Minecraft, killing the Evoker does not remove its vexes - you must kill them separately. Plugins like Vexxed solve this quality-of-life issue by clearing them on Evoker death."
+    }
+  ]
+}

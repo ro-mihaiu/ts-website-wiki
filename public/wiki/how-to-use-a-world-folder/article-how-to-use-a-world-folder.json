@@ -1,0 +1,70 @@
+{
+  "title": "How to Use a World Folder in Minecraft Java Edition",
+  "edition": "java",
+  "slug": "how-to-use-a-world-folder",
+  "summary": "How to download, extract, and install a custom Minecraft Java world across Windows, macOS, and Linux.",
+  "tags": [
+    "World",
+    "Saves",
+    "Installation",
+    "Java"
+  ],
+  "lastUpdated": "2026-10-26",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Getting the world"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Find the world file from the download source (e.g. via `/dn input:<download_number>` in the TheySix Discord).",
+        "Download the world to a safe location on your device.",
+        "Extract the `.zip` or `.rar` file. The extracted result should be a folder containing your world (often named after the world or map)."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Installing the world"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Open your Minecraft saves folder (see locations below).",
+        "Move the extracted world folder into the `saves/` directory. Do not rename critical files inside of it.",
+        "Close your file explorer and launch your Minecraft instance (Vanilla, Forge, Fabric, or any launcher is fine).",
+        "Open Singleplayer - your world will appear in the list. Select it and play!"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Saves folder locations"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Windows: `%APPDATA%\\.minecraft\\saves\\`",
+        "macOS: `~/Library/Application Support/minecraft/saves/`",
+        "Linux: `~/.minecraft/saves/` (for Flatpak installs, use `~/.var/app/com.mojang.Minecraft/.minecraft/saves/`)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recommended tutorial"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "[Installing a Minecraft World Folder](https://www.youtube.com/watch?v=-q1OxlnLfu8)"
+      ]
+    }
+  ]
+}

@@ -8,7 +8,7 @@
     "Worlds",
     "Installation"
   ],
-  "lastUpdated": "2026-09-13",
+  "lastUpdated": "2026-10-26",
   "body": [
     {
       "type": "paragraph",
@@ -37,7 +37,7 @@
     },
     {
       "type": "paragraph",
-      "text": "Chunker can convert a world from Bedrock to Java or Java to Bedrock, and it can help downgrade world versions. Upload or drag the supported world folder or Bedrock .mcworld file into Chunker, choose the destination platform and version, then export the converted world."
+      "text": "[Chunker](https://www.chunker.app/) can convert a world from Bedrock to Java or Java to Bedrock, and it can help downgrade world versions. Upload or drag the supported world folder or Bedrock .mcworld file into Chunker, choose the destination platform and version, then export the converted world."
     },
     {
       "type": "image",

@@ -1,0 +1,77 @@
+{
+  "title": "How to Create a Schematic with Litematica",
+  "edition": "java",
+  "slug": "how-to-create-a-schematic",
+  "summary": "How to create and save a .litematica schematic of your build using Litematica and MaLiLib.",
+  "tags": [
+    "Litematica",
+    "MaLiLib",
+    "Schematic",
+    "Building",
+    "Java"
+  ],
+  "lastUpdated": "2026-10-26",
+  "body": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Prerequisites"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Litematica and MaLiLib installed for your Minecraft version",
+        "A world containing the build you'd like to save"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Creating and saving a schematic"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Open your world with Minecraft, Litematica, and MaLiLib loaded.",
+        "Equip the Litematica tool. By default, this is a stick.",
+        "Switch to Area Selection mode by holding Ctrl and scrolling your mouse wheel until 'Area Selection' is active.",
+        "Select your build. Left-click one corner of the structure, then right-click the opposite diagonal corner to create a selection box. Use Alt + Scroll to adjust the edges of your selection.",
+        "Open the Litematica menu by pressing M.",
+        "In the Area Selection Browser, find your active selection and click Save Schematic.",
+        "Give your schematic a name and confirm. The .litematica file will be saved to your schematics folder."
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Schematic file location"
+    },
+    {
+      "type": "paragraph",
+      "text": "Your schematics will be saved to the `schematics/` folder in your Minecraft instance directory:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Windows: `%APPDATA%\\.minecraft\\schematics\\` (or your custom launcher instance folder)",
+        "macOS: `~/Library/Application Support/minecraft/schematics/`",
+        "Linux: `~/.minecraft/schematics/` (for Flatpak installs, use `~/.var/app/com.mojang.Minecraft/.minecraft/schematics/`)"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Recommended tutorials"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "[Litematica Tutorial by Xisumavoid](https://www.youtube.com/watch?v=lRh4bhUA8IU)"
+      ]
+    }
+  ]
+}

@@ -6,9 +6,11 @@
   "tags": [
     "Discord",
     "Support",
-    "Troubleshooting"
+    "Troubleshooting",
+    "Tickets",
+    "Help"
   ],
-  "lastUpdated": "2026-09-13",
+  "lastUpdated": "2026-10-26",
   "body": [
     {
       "type": "paragraph",
@@ -58,6 +60,32 @@
     {
       "type": "paragraph",
       "text": "If you do not know what DN means, find the Download Number in the video's description and run /dn followed by that number in the bot channel. The bot will return the associated world and schematic archive links."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you are not sure whether a farm is Java or Bedrock, check the tutorial video description or ask the creator. If you cannot find that information, use the Java Farm category; the support team can help identify the edition."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Ticket expectations"
+    },
+    {
+      "type": "paragraph",
+      "text": "Here is a list of questions to ask yourself before opening a ticket, to help you gather the information the support team needs to help you."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "What edition of Minecraft are you using? (Java or Bedrock)",
+        "Is the world singleplayer or multiplayer? If multiplayer, what server software is it running?",
+        "What version of Minecraft are you using?",
+        "What mods, add-ons, or plugins are installed?",
+        "What farm are you trying to use, and where is the tutorial? If you have a Download Number, include it.",
+        "What exactly is going wrong, and when does it happen?",
+        "Do you have screenshots, videos, schematic, or world downloads to show the problem? If so, attach them to the ticket."
+      ]
     }
   ]
 }
