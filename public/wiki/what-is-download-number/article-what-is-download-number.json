@@ -1,0 +1,60 @@
+{
+	"title": "What is a Download Number?",
+	"edition": "discord",
+	"slug": "what-is-download-number",
+	"summary": "What a Download Number is and how to use it to get a schematic or world file.",
+	"tags": [
+		"Discord",
+		"Download",
+		"DN",
+		"Schematic",
+		"World",
+		"Files"
+	],
+	"lastUpdated": "2026-10-26",
+	"body": [
+		{
+			"type": "paragraph",
+			"content": "A Download Number, or DN, is the number used to find the files for a video. It is usually provided in the video's description."
+		},
+		{
+			"type": "heading",
+			"level": 2,
+			"content": "How to use a DN"
+		},
+		{
+			"type": "list",
+			"items": [
+				{
+					"type": "paragraph",
+					"content": "Copy the DN from the description of the video."
+				},
+				{
+					"type": "paragraph",
+					"content": "Go to [#🤖╏bot-commands](https://discord.com/channels/985227944236568606/1107506735897395332)."
+				},
+				{
+					"type": "paragraph",
+					"content": "Use the command `/dn [number]`. For example, use `/dn 467`."
+				},
+				{
+					"type": "paragraph",
+					"content": "The bot will show the files connected to that DN."
+				}
+			]
+		},
+		{
+			"type": "heading",
+			"level": 2,
+			"content": "File archives"
+		},
+		{
+			"type": "paragraph",
+			"content": "World files are archived in [#📤╏worlds](https://discord.com/channels/985227944236568606/1107503898912108654)."
+		},
+		{
+			"type": "paragraph",
+			"content": "Schematic files are archived in [#📤╏schematics](https://discord.com/channels/985227944236568606/1107707277449908426)."
+		}
+	]
+}

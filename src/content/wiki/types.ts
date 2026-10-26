@@ -1,9 +1,9 @@
 export type WikiEdition = "java" | "bedrock" | "discord";
 
 export type WikiBodyBlock =
-  | { type: "heading"; level: 2 | 3; text: string }
-  | { type: "paragraph"; text: string }
-  | { type: "list"; ordered?: boolean; items: string[] }
+  | { type: "heading"; level: 2 | 3; text?: string; content?: string }
+  | { type: "paragraph"; text?: string; content?: string }
+  | { type: "list"; ordered?: boolean; items: (string | { type?: "listItem"; text?: string; content?: string })[] }
   | { type: "ruleList"; items: { title: string; text: string }[] }
   | { type: "code"; language?: string; code: string }
   | { type: "image"; src: string; alt: string; caption?: string }

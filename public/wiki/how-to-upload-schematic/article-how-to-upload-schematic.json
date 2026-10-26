@@ -1,0 +1,123 @@
+{
+	"title": "How to Upload a Schematic?",
+	"edition": "discord",
+	"slug": "how-to-upload-schematic",
+	"summary": "How to submit a TheySix Minecraft farm Litematica schematic for review and possible addition to the Farm Vault?",
+	"tags": [
+		"Discord",
+		"Schematic",
+		"Litematica",
+		"Submissions",
+		"Farm Vault",
+		"Minecraft"
+	],
+	"lastUpdated": "2026-10-26",
+	"body": [
+		{
+			"type": "paragraph",
+			"content": "Submit TheySix Minecraft farm Litematica schematics in [#📤╏submissions](https://discord.com/channels/985227944236568606/1559942519482089492) for review and possible addition to the [TheySix Farm Vault](https://theysix.ro-mihaiu.xyz/). The schematic must match an existing TheySix farm from the database."
+		},
+		{
+			"type": "heading",
+			"level": 2,
+			"content": "Before posting"
+		},
+		{
+			"type": "list",
+			"items": [
+				{
+					"type": "paragraph",
+					"content": "Use the `Needs Verification` tag. Anyone can apply this tag."
+				},
+				{
+					"type": "paragraph",
+					"content": "Rename the post using `DN | Farm Type`. For example: `530 | Bonemeal`."
+				},
+				{
+					"type": "paragraph",
+					"content": "Use the farm's database number as the DN, then choose its primary farm type."
+				}
+			]
+		},
+		{
+			"type": "paragraph",
+			"content": "The available farm types are: `bonemeal`, `cobblestone`, `creeper`, `duper`, `gold`, `iron`, `kelp`, `lava`, `mob`, `raid`, `resin`, `sand`, `shulker`, `smelter`, `sugarcane`, `tnt`, `wither-skeleton`, `wood`, `wool`, and `xp`."
+		},
+		{
+			"type": "heading",
+			"level": 2,
+			"content": "Post layout"
+		},
+		{
+			"type": "code",
+			"language": "text",
+			"code": "Farm DN:\nFarm type:\nMinecraft version:\nLitematica download:\nNotes:"
+		},
+		{
+			"type": "heading",
+			"level": 2,
+			"content": "Upload your .litematic"
+		},
+		{
+			"type": "heading",
+			"level": 3,
+			"content": "Option 1: Discord upload"
+		},
+		{
+			"type": "list",
+			"items": [
+				{
+					"type": "paragraph",
+					"content": "Drag the `.litematic` file directly into your post."
+				},
+				{
+					"type": "paragraph",
+					"content": "Wait until Discord finishes uploading the file, then send the post."
+				},
+				{
+					"type": "paragraph",
+					"content": "Complete the submission template in the post."
+				}
+			]
+		},
+		{
+			"type": "heading",
+			"level": 3,
+			"content": "Option 2: MediaFire"
+		},
+		{
+			"type": "list",
+			"items": [
+				{
+					"type": "paragraph",
+					"content": "Upload your `.litematic` file to MediaFire."
+				},
+				{
+					"type": "paragraph",
+					"content": "Open the uploaded file and choose `Share` or `Copy link`."
+				},
+				{
+					"type": "paragraph",
+					"content": "Make sure people with the link can download the file."
+				},
+				{
+					"type": "paragraph",
+					"content": "Paste the link beside `Litematica download:` in the template."
+				}
+			]
+		},
+		{
+			"type": "heading",
+			"level": 2,
+			"content": "Review and rewards"
+		},
+		{
+			"type": "paragraph",
+			"content": "Reviews normally take 2 to 48 hours. A moderator will apply `APPROVED` if the schematic is valid and matches the TheySix farm. They may apply `Rejected / Duplicate` if it is incomplete, invalid, already submitted, or does not match the original farm."
+		},
+		{
+			"type": "paragraph",
+			"content": "Do not make duplicate posts while a submission is being reviewed. Update your existing post instead. Members whose schematics are successfully verified may receive the contributor role as thanks for improving the vault."
+		}
+	]
+}

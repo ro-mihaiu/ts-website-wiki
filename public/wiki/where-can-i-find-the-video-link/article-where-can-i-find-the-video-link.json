@@ -1,0 +1,80 @@
+{
+	"title": "Where can I find the video link?",
+	"edition": "discord",
+	"slug": "where-can-i-find-the-video-link",
+	"summary": "Where to find TheySix videos and the link needed to get their files.",
+	"tags": [
+		"Discord",
+		"YouTube",
+		"Videos",
+		"Download",
+		"Files"
+	],
+	"lastUpdated": "2026-10-26",
+	"body": [
+		{
+			"type": "paragraph",
+			"content": "Find the video that shows the farm or build you want. The video description can contain the video link, the Download Number, and links to the files."
+		},
+		{
+			"type": "heading",
+			"level": 2,
+			"content": "TheySix YouTube channels"
+		},
+		{
+			"type": "list",
+			"items": [
+				{
+					"type": "paragraph",
+					"content": "[TheySix](https://www.youtube.com/@TheySix)"
+				},
+				{
+					"type": "paragraph",
+					"content": "[TheySixMC](https://www.youtube.com/@TheySixMC)"
+				},
+				{
+					"type": "paragraph",
+					"content": "[TheySix Creations](https://www.youtube.com/@TheySixCreations)"
+				},
+				{
+					"type": "paragraph",
+					"content": "[TheySix Minecraft Java](https://www.youtube.com/@TheySixMinecraftJava)"
+				},
+				{
+					"type": "paragraph",
+					"content": "[TheySix Bedrock](https://www.youtube.com/@TheySixBedrock)"
+				}
+			]
+		},
+		{
+			"type": "heading",
+			"level": 2,
+			"content": "Finding the link"
+		},
+		{
+			"type": "list",
+			"items": [
+				{
+					"type": "paragraph",
+					"content": "Open the channel that matches the video you are looking for."
+				},
+				{
+					"type": "paragraph",
+					"content": "Open the video."
+				},
+				{
+					"type": "paragraph",
+					"content": "Open the full description below the video."
+				},
+				{
+					"type": "paragraph",
+					"content": "Copy the video link or the DN from the description."
+				}
+			]
+		},
+		{
+			"type": "paragraph",
+			"content": "Use the DN with the [Download Number guide](https://wiki-theysix.ro-mihaiu.xyz/w/discord/what-is-download-number) to find the schematic or world file."
+		}
+	]
+}

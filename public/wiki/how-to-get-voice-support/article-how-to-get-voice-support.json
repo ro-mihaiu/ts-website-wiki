@@ -1,0 +1,81 @@
+{
+    "title": "How to Get Voice Support?",
+    "edition": "discord",
+    "slug": "how-to-get-voice-support",
+    "summary": "A guide to getting voice support in the TheySix Discord.",
+    "tags": [
+        "Discord",
+        "Support",
+        "Voice",
+        "Help",
+        "Assistance",
+        "Guides",
+        "FAQ"
+    ],
+    "lastUpdated": "2026-10-26",
+    "body": [
+        {
+            "type": "paragraph",
+            "content": "This is a guide to getting voice support in the TheySix Discord."
+        },
+        {
+            "type": "heading",
+            "level": 2,
+            "content": "Requesting voice support"
+        },
+        {
+            "type": "paragraph",
+            "content": "To get voice support, you need to create a ticket in [#🆘╏support](https://discord.com/channels/985227944236568606/1444669624435212308). Then mention that you would like to be helped via voice channel. A staff member will respond and may ask you to join a voice channel for further assistance."
+        },
+        {
+            "type": "paragraph",
+            "content": "Once you are in the server, you can request voice support by following these steps:"
+        },
+        {
+            "type": "list",
+            "items": [
+                {
+                    "type": "listItem",
+                    "content": "Create a ticket in [#🆘╏support](https://discord.com/channels/985227944236568606/1444669624435212308)."
+                },
+                {
+                    "type": "listItem",
+                    "content": "Provide a brief description of the issue you are experiencing. Along with enough proof such as screenshots, screen recordings, schematic (.litematic , .schematic , .nbt)."
+                },
+                {
+                    "type": "listItem",
+                    "content": "Mention that you would like to be helped via voice channel."
+                },
+                {
+                    "type": "listItem",
+                    "content": "Wait for a staff member to respond and ask you to join a voice channel."
+                },
+                {
+                    "type": "listItem",
+                    "content": "Not all staff members are able to provide voice support, so be mindful in case they cannot assist you in this way."
+                }
+            ]
+        },
+        {
+            "type": "paragraph",
+            "content": "If you are unable to get voice support, you can still receive assistance through text chat in the ticket."
+        },
+        {
+            "type": "heading",
+            "level": 2,
+            "content": "Approved voice support"
+        },
+        {
+            "type": "paragraph",
+            "content": "But, if you were approved to get voice support, you will have to wait patiently in [#📒╏Waiting Room](https://discord.com/channels/985227944236568606/1563553484434051092)."
+        },
+        {
+            "type": "paragraph",
+            "content": "Then they will transfer you to [#🎧╏Support™](https://discord.com/channels/985227944236568606/1563553255647223878). Where you will to sharescreen the entire process."
+        },
+        {
+            "type": "paragraph",
+            "content": "Please be patient while waiting for a response, as staff members may be assisting other members at the same time."
+        }
+    ]
+}

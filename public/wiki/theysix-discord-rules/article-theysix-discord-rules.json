@@ -8,7 +8,7 @@
     "Rules",
     "Community"
   ],
-  "lastUpdated": "2026-09-13",
+  "lastUpdated": "2026-10-26",
   "body": [
     {
       "type": "paragraph",
@@ -43,16 +43,28 @@
           "text": "Racist comments, hateful language, slander, and toxic messages are not allowed. Help keep the community welcoming and free from discrimination."
         },
         {
-          "title": "No advertising",
-          "text": "Do not advertise in the server, direct messages, or your profile when it is used to promote content to TheySix members. Paid services, shops, and paid promotions are not allowed."
+          "title": "Use the self-promotion channel",
+          "text": "Minecraft content creators may share their builds and promote their YouTube videos in [#🔥╏self-promotion](https://discord.com/channels/985227944236568606/1390278045121904670). This channel is for sharing community content, so you will not be banned for promoting your own Minecraft content there."
+        },
+        {
+          "title": "No commercial advertising",
+          "text": "Advertising online shops, paid services, or paid promotions is not allowed, including in the self-promotion channel. Do not use other channels, direct messages, or member profiles to promote commercial content to TheySix members."
         },
         {
           "title": "Tag staff only when needed",
           "text": "Avoid unnecessary staff mentions. Use the dedicated helpers and support channels first so staff can respond efficiently."
         },
         {
-          "title": "Do not tag protected roles",
-          "text": "Do not tag TheySix or staff roles. The only exception is when a staff member specifically asks you to do so."
+          "title": "Use the normal staff escalation",
+          "text": "If you need staff help, you may ping up to two Helpers once. Try to choose Helpers who do not have the LOA or SLOA tag. If no Helper replies after several hours, you may ping a Moderator once. Do not mass-ping staff."
+        },
+        {
+          "title": "Use the emergency role only for urgent issues",
+          "text": "The emergency role is for genuinely urgent situations that need faster attention. Use it only when the normal support process is not enough. The expected response time is between one and eight hours, so an emergency ping is not a guarantee of an immediate reply."
+        },
+        {
+          "title": "Do not misuse protected or emergency roles",
+          "text": "Do not ping TheySix, staff, or emergency roles without a valid reason. Misusing the emergency ping can result in a warning. A third warning for misuse can result in a ban. Follow any additional instructions from staff about role mentions."
         }
       ]
     },
@@ -88,6 +100,24 @@
       "label": "Minecraft Usage Guidelines",
       "href": "https://www.minecraft.net/usage-guidelines",
       "description": "Additional guidance for using Minecraft names, assets, and related community content."
+    },
+    {
+      "type": "link",
+      "label": "TheySix Terms of Service",
+      "href": "https://wiki-theysix.ro-mihaiu.xyz/legal/terms",
+      "description": "The terms for using the TheySix Wiki and its community resources."
+    },
+    {
+      "type": "link",
+      "label": "TheySix Privacy Policy",
+      "href": "https://wiki-theysix.ro-mihaiu.xyz/legal/privacy",
+      "description": "How the TheySix Wiki handles privacy, requests, and browser storage."
+    },
+    {
+      "type": "link",
+      "label": "TheySix Cookie Notice",
+      "href": "https://wiki-theysix.ro-mihaiu.xyz/legal/cookies",
+      "description": "What browser storage the TheySix Wiki uses and how embedded services may behave."
     },
     {
       "type": "paragraph",

@@ -1,0 +1,86 @@
+{
+    "title": "How to get the schematic or world folder?",
+    "edition": "discord",
+    "slug": "how-to-get-the-schematic-or-world-folder",
+    "summary": "A guide on how to get the schematic or the world folder.",
+    "tags": [
+        "Discord",
+        "Files",
+        "Schematic",
+        "World",
+        "Litematica",
+        "Farm",
+        "Download"
+    ],
+    "lastUpdated": "2026-10-26",
+    "body": [
+        {
+            "type": "paragraph",
+            "content": "This is a guide on how to get and download the schematic and/or world folder from the website or from discord." 
+        },
+        {
+            "type": "heading",
+            "level": 2,
+            "content": "From Discord"
+        },
+        {
+            "type": "paragraph",
+            "content": "First you have to remember the [DN](https://wiki-theysix.ro-mihaiu.xyz/w/discord/what-is-download-number) or the [video link](https://wiki-theysix.ro-mihaiu.xyz/w/discord/where-can-i-find-the-video-link)."
+        },
+        {
+            "type": "list",
+            "items": [
+                {
+                    "type": "paragraph",
+                    "content": "Go in [#🤖╏bot-commands](https://discord.com/channels/985227944236568606/1107506735897395332)."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Use `/dn` or `/vd` using [mihulish](https://discord.com/users/1530248481481162824)."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Select the file you want, Schematic or World. And click on the provided link."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "If there is not a schematic provided, go in [#'Top Schematics wanted'](https://discord.com/channels/985227944236568606/1559976502647590953) and make a request by entering the DN in the post."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "But if you found it, congrats. Click on the mediafire.com link and download it in your ~/Downloads or C:\\Users\\%username%\\Downloads."
+                }
+            ]
+        },
+        {
+            "type": "heading",
+            "level": 2,
+            "content": "From the website"
+        },
+        {
+            "type": "paragraph",
+            "content": "If you have the DN, open [theysix.ro-mihaiu.xyz](https://theysix.ro-mihaiu.xyz) and search by DN or by farm type / video name. For example, open https://theysix.ro-mihaiu.xyz/dn/467."
+        },
+        {
+            "type": "list",
+            "items": [
+                {
+                    "type": "paragraph",
+                    "content": "Open the DN link in your browser."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Choose the schematic or world folder you want."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Click the provided download link."
+                },
+                {
+                    "type": "paragraph",
+                    "content": "Save the file in your ~/Downloads or C:\\Users\\%username%\\Downloads folder."
+                }
+            ]
+        }
+    ]
+}

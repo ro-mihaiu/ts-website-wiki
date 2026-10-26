@@ -2,9 +2,19 @@ import Image from "next/image";
 import type { WikiBodyBlock } from "@/content/wiki/types";
 
 function textWithLinks(text: string) {
-  return text.split(/(https?:\/\/[^\s)\]]+)/g).map((part, index) =>
-    /^https?:\/\//.test(part) ? <a key={index} href={part} target="_blank" rel="noopener noreferrer" className="wiki-link">{part}</a> : part,
-  );
+  return text.split(/(\[[^\]]+\]\(https?:\/\/[^\s)]+\)|https?:\/\/[^\s)\]]+)/g).map((part, index) => {
+    const markdownLink = part.match(/^\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)$/);
+    const href = markdownLink?.[2] ?? (part.startsWith("http") ? part : undefined);
+    return href ? <a key={index} href={href} target="_blank" rel="noopener noreferrer" className="wiki-link">{markdownLink?.[1] ?? part}</a> : part;
+  });
+}
+
+function blockText(block: { text?: string; content?: string }) {
+  return block.text ?? block.content ?? "";
+}
+
+function listItemText(item: string | { content?: string; text?: string }) {
+  return typeof item === "string" ? item : blockText(item);
 }
 
 export function WikiRenderer({ blocks }: { blocks: WikiBodyBlock[] }) {
@@ -13,11 +23,12 @@ export function WikiRenderer({ blocks }: { blocks: WikiBodyBlock[] }) {
       switch (block.type) {
         case "heading": {
           const Heading = block.level === 2 ? "h2" : "h3";
-          return <Heading key={index} id={block.text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}>{block.text}</Heading>;
+          const text = blockText(block);
+          return <Heading key={index} id={text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}>{text}</Heading>;
         }
-        case "paragraph": return <p key={index}>{textWithLinks(block.text)}</p>;
-        case "list": { const List = block.ordered ? "ol" : "ul"; return <List key={index}>{block.items.map((item) => <li key={item}>{textWithLinks(item)}</li>)}</List>; }
-        case "ruleList": return <dl key={index} className="wiki-rules">{block.items.map((item) => <div key={item.title}><dt>{item.title}</dt><dd>{item.text}</dd></div>)}</dl>;
+        case "paragraph": return <p key={index}>{textWithLinks(blockText(block))}</p>;
+        case "list": { const List = block.ordered ? "ol" : "ul"; return <List key={index}>{block.items.map((item, itemIndex) => <li key={itemIndex}>{textWithLinks(listItemText(item))}</li>)}</List>; }
+        case "ruleList": return <dl key={index} className="wiki-rules">{block.items.map((item) => <div key={item.title}><dt>{item.title}</dt><dd>{textWithLinks(item.text)}</dd></div>)}</dl>;
         case "code": return <pre key={index}><code>{block.code}</code></pre>;
         case "link": return <p key={index} className="wiki-resource"><a href={block.href} target="_blank" rel="noopener noreferrer">{block.label}</a>{block.description ? <span>{block.description}</span> : null}</p>;
         case "callout": return <aside key={index} className={`wiki-callout wiki-callout-${block.variant}`}>{block.text}</aside>;

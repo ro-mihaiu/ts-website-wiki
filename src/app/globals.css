@@ -31,6 +31,8 @@
 .wiki-rail a { display: block; padding: .45rem .7rem; color: var(--color-ink-muted); font-size: .82rem; line-height: 1.35; text-decoration: none; }
 .wiki-rail a:hover, .wiki-rail a.active { border-left: 2px solid var(--color-portal); margin-left: -1px; color: var(--color-ink); }
 .wiki-article-header { border-bottom: 1px solid var(--color-rule); margin-bottom: 2.5rem; padding-bottom: 1.8rem; }
+.wiki-edit-link { display: inline-block; margin-top: 1.2rem; color: var(--color-portal); font-size: .82rem; font-weight: 800; text-decoration: none; }
+.wiki-edit-link:hover { text-decoration: underline; }
 .wiki-prose { color: var(--color-ink); font-size: 1.02rem; line-height: 1.82; }
 .wiki-prose h2 { margin: 3rem 0 1rem; color: var(--color-ink-bright); font-size: 1.7rem; line-height: 1.15; }
 .wiki-prose h3 { margin: 2rem 0 .7rem; color: var(--color-ink-bright); font-size: 1.25rem; }
