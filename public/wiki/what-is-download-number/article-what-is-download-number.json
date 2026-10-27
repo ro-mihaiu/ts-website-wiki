@@ -11,11 +11,16 @@
 		"World",
 		"Files"
 	],
-	"lastUpdated": "2026-10-26",
+	"lastUpdated": "2026-10-27",
 	"body": [
 		{
 			"type": "paragraph",
 			"content": "A Download Number, or DN, is the number used to find the files for a video. It is usually provided in the video's description."
+		},
+		{
+			"type": "callout",
+			"variant": "note",
+			"text": "DNs identify TheySix farm downloads. A farm built from another creator's video may not have a TheySix DN."
 		},
 		{
 			"type": "heading",
@@ -55,6 +60,10 @@
 		{
 			"type": "paragraph",
 			"content": "Schematic files are archived in [#📤╏schematics](https://discord.com/channels/985227944236568606/1107707277449908426)."
+		},
+		{
+			"type": "paragraph",
+			"content": "If you are filling out a support form for a specific farm, enter the number as `/dn input:<number>` when the form asks for it. Do not upload the video file as the DN."
 		}
 	]
 }

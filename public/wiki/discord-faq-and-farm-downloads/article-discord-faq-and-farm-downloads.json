@@ -8,7 +8,7 @@
     "FAQ",
     "Downloads"
   ],
-  "lastUpdated": "2026-09-13",
+  "lastUpdated": "2026-10-27",
   "body": [
     {
       "type": "paragraph",
@@ -30,11 +30,11 @@
     },
     {
       "type": "paragraph",
-      "text": "A video description may include a Download Number, or DN. In the [bot commands channel, run the Archiver Bot command with that number, for example /dn 467. The bot returns the matching archive information and links. World files are stored in worlds, while Java schematic files are stored in schematics."
+      "text": "A TheySix video description may include a Download Number, or DN. In the [bot commands channel](https://discord.com/channels/985227944236568606/1107506735897395332), run the Archiver Bot command with that number, for example `/dn 467`. The bot returns the matching archive information and links. World files are stored in worlds, while Java schematic files are stored in schematics."
     },
     {
       "type": "paragraph",
-      "text": "A schematic button on the website may lead to a placeholder when that farm has no schematic. Check the farm's available links or use /dn before assuming the file is missing from the archive."
+      "text": "A farm may have only a world file. You can join that world and create a schematic yourself; a schematic link should not be assumed to exist just because a world download exists. Check the farm's available links or use `/dn` before assuming the file is missing from the archive."
     },
     {
       "type": "heading",

@@ -8,7 +8,7 @@
     "Trident Killer",
     "Farm Building"
   ],
-  "lastUpdated": "2026-09-13",
+  "lastUpdated": "2026-10-27",
   "body": [
     {
       "type": "paragraph",
@@ -28,6 +28,19 @@
     {
       "type": "paragraph",
       "text": "A trapdoor-based trident killer uses the chamber geometry and moving blocks to keep thrown tridents in a controlled path while mobs are held in the kill space. The correct orientation and timing are important: copying the footprint while rotating key components can cause tridents to miss or mobs to escape."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Raid farm ravager checks"
+    },
+    {
+      "type": "list",
+      "items": [
+        "The lava should be one block below the intended ravager position.",
+        "The ravager should be pushed up into the water so it takes lava damage.",
+        "Remove extra gates and compare the build with the tutorial if the ravager is not entering the water correctly."
+      ]
     },
     {
       "type": "video",

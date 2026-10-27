@@ -38,3 +38,7 @@ next-env.d.ts
 !.vscode/extensions.json
 .idea
 node_modules
+
+# to do and other stuff
+.docs/*
+.docs
